@@ -1,0 +1,207 @@
+D:\Dyplom\FINAL\SUR_CSTG\SUR_CSTG\bin\Debug\SUR_CSTG.exe.config
+D:\Dyplom\FINAL\SUR_CSTG\SUR_CSTG\obj\Debug\SUR_CSTG.csprojResolveAssemblyReference.cache
+D:\Dyplom\FINAL\SUR_CSTG\SUR_CSTG\obj\Debug\MainWindow.baml
+D:\Dyplom\FINAL\SUR_CSTG\SUR_CSTG\obj\Debug\Views\GeneralWindowView.baml
+D:\Dyplom\FINAL\SUR_CSTG\SUR_CSTG\obj\Debug\MainWindow.g.cs
+D:\Dyplom\FINAL\SUR_CSTG\SUR_CSTG\obj\Debug\Views\GeneralWindowView.g.cs
+D:\Dyplom\FINAL\SUR_CSTG\SUR_CSTG\obj\Debug\App.g.cs
+D:\Dyplom\FINAL\SUR_CSTG\SUR_CSTG\obj\Debug\SUR_CSTG_MarkupCompile.cache
+D:\Dyplom\FINAL\SUR_CSTG\SUR_CSTG\obj\Debug\SUR_CSTG.g.resources
+D:\Dyplom\FINAL\SUR_CSTG\SUR_CSTG\obj\Debug\SUR_CSTG.Properties.Resources.resources
+D:\Dyplom\FINAL\SUR_CSTG\SUR_CSTG\obj\Debug\SUR_CSTG.csproj.GenerateResource.Cache
+D:\Dyplom\FINAL\SUR_CSTG\SUR_CSTG\bin\Debug\SUR_CSTG.exe
+D:\Dyplom\FINAL\SUR_CSTG\SUR_CSTG\bin\Debug\SUR_CSTG.pdb
+D:\Dyplom\FINAL\SUR_CSTG\SUR_CSTG\bin\Debug\EntityFramework.dll
+D:\Dyplom\FINAL\SUR_CSTG\SUR_CSTG\bin\Debug\EntityFramework.SqlServer.dll
+D:\Dyplom\FINAL\SUR_CSTG\SUR_CSTG\bin\Debug\EntityFramework.SqlServerCompact.dll
+D:\Dyplom\FINAL\SUR_CSTG\SUR_CSTG\bin\Debug\System.Data.SqlServerCe.dll
+D:\Dyplom\FINAL\SUR_CSTG\SUR_CSTG\bin\Debug\EntityFramework.xml
+D:\Dyplom\FINAL\SUR_CSTG\SUR_CSTG\bin\Debug\EntityFramework.SqlServer.xml
+D:\Dyplom\FINAL\SUR_CSTG\SUR_CSTG\bin\Debug\EntityFramework.SqlServerCompact.xml
+D:\Dyplom\FINAL\SUR_CSTG\SUR_CSTG\obj\Debug\SUR_CSTG.exe
+D:\Dyplom\FINAL\SUR_CSTG\SUR_CSTG\obj\Debug\SUR_CSTG.pdb
+D:\Dyplom\FINAL\SUR_CSTG\SUR_CSTG\obj\Debug\Views\AreaViews\AreaView.baml
+D:\Dyplom\FINAL\SUR_CSTG\SUR_CSTG\obj\Debug\Views\AreaViews\AreaView.g.cs
+D:\Dyplom\FINAL\SUR_CSTG\SUR_CSTG\obj\Debug\Views\DeviceViews\DeviceView.baml
+D:\Dyplom\FINAL\SUR_CSTG\SUR_CSTG\obj\Debug\Views\DeviceViews\DeviceView.g.cs
+F:\Studia\Dyplom\!LAST\SUR_CSTG\SUR_CSTG\bin\Debug\SUR_CSTG.exe.config
+F:\Studia\Dyplom\!LAST\SUR_CSTG\SUR_CSTG\obj\Debug\SUR_CSTG.exe
+F:\Studia\Dyplom\!LAST\SUR_CSTG\SUR_CSTG\obj\Debug\SUR_CSTG.pdb
+F:\Studia\Dyplom\!LAST\SUR_CSTG\SUR_CSTG\bin\Debug\SUR_CSTG.exe
+F:\Studia\Dyplom\!LAST\SUR_CSTG\SUR_CSTG\bin\Debug\SUR_CSTG.pdb
+F:\Studia\Dyplom\!LAST\SUR_CSTG\SUR_CSTG\bin\Debug\EntityFramework.dll
+F:\Studia\Dyplom\!LAST\SUR_CSTG\SUR_CSTG\bin\Debug\EntityFramework.SqlServer.dll
+F:\Studia\Dyplom\!LAST\SUR_CSTG\SUR_CSTG\bin\Debug\EntityFramework.SqlServerCompact.dll
+F:\Studia\Dyplom\!LAST\SUR_CSTG\SUR_CSTG\bin\Debug\System.Data.SqlServerCe.dll
+F:\Studia\Dyplom\!LAST\SUR_CSTG\SUR_CSTG\bin\Debug\EntityFramework.xml
+F:\Studia\Dyplom\!LAST\SUR_CSTG\SUR_CSTG\bin\Debug\EntityFramework.SqlServer.xml
+F:\Studia\Dyplom\!LAST\SUR_CSTG\SUR_CSTG\bin\Debug\EntityFramework.SqlServerCompact.xml
+F:\Studia\Dyplom\!LAST\SUR_CSTG\SUR_CSTG\obj\Debug\MainWindow.baml
+F:\Studia\Dyplom\!LAST\SUR_CSTG\SUR_CSTG\obj\Debug\Views\AreaViews\AddAreaWindowView.baml
+F:\Studia\Dyplom\!LAST\SUR_CSTG\SUR_CSTG\obj\Debug\Views\AreaViews\AreaListView.baml
+F:\Studia\Dyplom\!LAST\SUR_CSTG\SUR_CSTG\obj\Debug\Views\AreaViews\AreaView.baml
+F:\Studia\Dyplom\!LAST\SUR_CSTG\SUR_CSTG\obj\Debug\Views\DeviceViews\DeviceView.baml
+F:\Studia\Dyplom\!LAST\SUR_CSTG\SUR_CSTG\obj\Debug\Views\GeneralWindowView.baml
+F:\Studia\Dyplom\!LAST\SUR_CSTG\SUR_CSTG\obj\Debug\MainWindow.g.cs
+F:\Studia\Dyplom\!LAST\SUR_CSTG\SUR_CSTG\obj\Debug\Views\AreaViews\AddAreaWindowView.g.cs
+F:\Studia\Dyplom\!LAST\SUR_CSTG\SUR_CSTG\obj\Debug\Views\AreaViews\AreaListView.g.cs
+F:\Studia\Dyplom\!LAST\SUR_CSTG\SUR_CSTG\obj\Debug\Views\AreaViews\AreaView.g.cs
+F:\Studia\Dyplom\!LAST\SUR_CSTG\SUR_CSTG\obj\Debug\Views\DeviceViews\DeviceView.g.cs
+F:\Studia\Dyplom\!LAST\SUR_CSTG\SUR_CSTG\obj\Debug\Views\GeneralWindowView.g.cs
+F:\Studia\Dyplom\!LAST\SUR_CSTG\SUR_CSTG\obj\Debug\App.g.cs
+F:\Studia\Dyplom\!LAST\SUR_CSTG\SUR_CSTG\obj\Debug\SUR_CSTG_MarkupCompile.cache
+F:\Studia\Dyplom\!LAST\SUR_CSTG\SUR_CSTG\obj\Debug\SUR_CSTG.g.resources
+F:\Studia\Dyplom\!LAST\SUR_CSTG\SUR_CSTG\obj\Debug\SUR_CSTG.Properties.Resources.resources
+F:\Studia\Dyplom\!LAST\SUR_CSTG\SUR_CSTG\obj\Debug\SUR_CSTG.csproj.GenerateResource.Cache
+F:\Studia\Dyplom\!LAST\SUR_CSTG\SUR_CSTG\obj\Debug\Views\AreaViews\AreaSerchListView.baml
+F:\Studia\Dyplom\!LAST\SUR_CSTG\SUR_CSTG\obj\Debug\Views\AreaViews\AreaSerchListView.g.cs
+F:\Studia\Dyplom\!LAST\SUR_CSTG\SUR_CSTG\obj\Debug\SUR_CSTG_Content.g.cs
+F:\Studia\Dyplom\!LAST\SUR_CSTG\SUR_CSTG\obj\Debug\GeneratedInternalTypeHelper.g.cs
+F:\Studia\Dyplom\!LAST\SUR_CSTG\SUR_CSTG\obj\Debug\SUR_CSTG_MarkupCompile.lref
+F:\Studia\Dyplom\!LAST\SUR_CSTG\SUR_CSTG\bin\Debug\SUR_Db.sdf
+F:\Studia\Dyplom\!LAST\SUR_CSTG\SUR_CSTG\obj\Debug\Views\AreaViews\EditAreaWindowView.baml
+F:\Studia\Dyplom\!LAST\SUR_CSTG\SUR_CSTG\obj\Debug\Views\AreaViews\EditAreaWindowView.g.cs
+F:\Studia\Dyplom\!LAST\SUR_CSTG\SUR_CSTG\obj\Debug\Views\AreaViews\DeleteAreaWindowView.baml
+F:\Studia\Dyplom\!LAST\SUR_CSTG\SUR_CSTG\obj\Debug\Views\AreaViews\DeleteAreaWindowView.g.cs
+C:\Users\asus\Documents\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\bin\Debug\SUR_CSTG.exe.config
+C:\Users\asus\Documents\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\obj\Debug\SUR_CSTG.exe
+C:\Users\asus\Documents\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\obj\Debug\SUR_CSTG.pdb
+c:\Users\asus\Documents\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\bin\Debug\SUR_Db.sdf
+c:\Users\asus\Documents\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\bin\Debug\SUR_CSTG.exe
+c:\Users\asus\Documents\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\bin\Debug\SUR_CSTG.pdb
+c:\Users\asus\Documents\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\bin\Debug\EntityFramework.dll
+c:\Users\asus\Documents\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\bin\Debug\EntityFramework.SqlServer.dll
+c:\Users\asus\Documents\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\bin\Debug\EntityFramework.SqlServerCompact.dll
+c:\Users\asus\Documents\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\bin\Debug\System.Data.SqlServerCe.dll
+c:\Users\asus\Documents\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\bin\Debug\EntityFramework.xml
+c:\Users\asus\Documents\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\bin\Debug\EntityFramework.SqlServer.xml
+c:\Users\asus\Documents\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\bin\Debug\EntityFramework.SqlServerCompact.xml
+c:\Users\asus\Documents\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\obj\Debug\MainWindow.baml
+c:\Users\asus\Documents\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\obj\Debug\Views\AreaViews\AddAreaWindowView.baml
+c:\Users\asus\Documents\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\obj\Debug\Views\AreaViews\AreaListView.baml
+c:\Users\asus\Documents\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\obj\Debug\Views\AreaViews\AreaSerchListView.baml
+c:\Users\asus\Documents\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\obj\Debug\Views\AreaViews\DeleteAreaWindowView.baml
+c:\Users\asus\Documents\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\obj\Debug\Views\DeviceViews\DeviceView.baml
+c:\Users\asus\Documents\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\obj\Debug\Views\GeneralWindowView.baml
+c:\Users\asus\Documents\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\obj\Debug\MainWindow.g.cs
+c:\Users\asus\Documents\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\obj\Debug\Views\AreaViews\AddAreaWindowView.g.cs
+c:\Users\asus\Documents\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\obj\Debug\Views\AreaViews\AreaListView.g.cs
+c:\Users\asus\Documents\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\obj\Debug\Views\AreaViews\AreaSerchListView.g.cs
+c:\Users\asus\Documents\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\obj\Debug\Views\AreaViews\AreaView.g.cs
+c:\Users\asus\Documents\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\obj\Debug\Views\AreaViews\DeleteAreaWindowView.g.cs
+c:\Users\asus\Documents\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\obj\Debug\Views\AreaViews\EditAreaWindowView.g.cs
+c:\Users\asus\Documents\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\obj\Debug\Views\DeviceViews\DeviceView.g.cs
+c:\Users\asus\Documents\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\obj\Debug\Views\GeneralWindowView.g.cs
+c:\Users\asus\Documents\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\obj\Debug\App.g.cs
+c:\Users\asus\Documents\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\obj\Debug\SUR_CSTG_Content.g.cs
+c:\Users\asus\Documents\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\obj\Debug\GeneratedInternalTypeHelper.g.cs
+c:\Users\asus\Documents\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\obj\Debug\SUR_CSTG_MarkupCompile.cache
+c:\Users\asus\Documents\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\obj\Debug\SUR_CSTG_MarkupCompile.lref
+c:\Users\asus\Documents\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\obj\Debug\Views\AreaViews\AreaView.baml
+c:\Users\asus\Documents\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\obj\Debug\Views\AreaViews\EditAreaWindowView.baml
+c:\Users\asus\Documents\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\obj\Debug\SUR_CSTG.g.resources
+c:\Users\asus\Documents\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\obj\Debug\SUR_CSTG.Properties.Resources.resources
+c:\Users\asus\Documents\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\obj\Debug\SUR_CSTG.csproj.GenerateResource.Cache
+C:\Users\Rafał\Documents\Dyplom\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\bin\Debug\SUR_Db.sdf
+C:\Users\Rafał\Documents\Dyplom\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\bin\Debug\SUR_CSTG.exe.config
+C:\Users\Rafał\Documents\Dyplom\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\bin\Debug\SUR_CSTG.exe
+C:\Users\Rafał\Documents\Dyplom\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\bin\Debug\SUR_CSTG.pdb
+C:\Users\Rafał\Documents\Dyplom\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\bin\Debug\EntityFramework.dll
+C:\Users\Rafał\Documents\Dyplom\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Rafał\Documents\Dyplom\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\bin\Debug\EntityFramework.SqlServerCompact.dll
+C:\Users\Rafał\Documents\Dyplom\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\Rafał\Documents\Dyplom\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\bin\Debug\EntityFramework.xml
+C:\Users\Rafał\Documents\Dyplom\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Rafał\Documents\Dyplom\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\bin\Debug\EntityFramework.SqlServerCompact.xml
+C:\Users\Rafał\Documents\Dyplom\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\obj\Debug\MainWindow.baml
+C:\Users\Rafał\Documents\Dyplom\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\obj\Debug\Views\AreaViews\AddAreaWindowView.baml
+C:\Users\Rafał\Documents\Dyplom\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\obj\Debug\Views\AreaViews\AreaListView.baml
+C:\Users\Rafał\Documents\Dyplom\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\obj\Debug\Views\AreaViews\AreaSerchListView.baml
+C:\Users\Rafał\Documents\Dyplom\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\obj\Debug\Views\AreaViews\DeleteAreaWindowView.baml
+C:\Users\Rafał\Documents\Dyplom\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\obj\Debug\Views\DeviceViews\DeviceView.baml
+C:\Users\Rafał\Documents\Dyplom\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\obj\Debug\Views\GeneralWindowView.baml
+C:\Users\Rafał\Documents\Dyplom\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\obj\Debug\Views\PersonViews\AddPersonWindowView.baml
+C:\Users\Rafał\Documents\Dyplom\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\obj\Debug\Views\PersonViews\PersonListView.baml
+C:\Users\Rafał\Documents\Dyplom\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\obj\Debug\MainWindow.g.cs
+C:\Users\Rafał\Documents\Dyplom\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\obj\Debug\Views\AreaViews\AddAreaWindowView.g.cs
+C:\Users\Rafał\Documents\Dyplom\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\obj\Debug\Views\AreaViews\AreaListView.g.cs
+C:\Users\Rafał\Documents\Dyplom\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\obj\Debug\Views\AreaViews\AreaSerchListView.g.cs
+C:\Users\Rafał\Documents\Dyplom\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\obj\Debug\Views\AreaViews\AreaView.g.cs
+C:\Users\Rafał\Documents\Dyplom\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\obj\Debug\Views\AreaViews\DeleteAreaWindowView.g.cs
+C:\Users\Rafał\Documents\Dyplom\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\obj\Debug\Views\AreaViews\EditAreaWindowView.g.cs
+C:\Users\Rafał\Documents\Dyplom\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\obj\Debug\Views\DeviceViews\DeviceView.g.cs
+C:\Users\Rafał\Documents\Dyplom\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\obj\Debug\Views\GeneralWindowView.g.cs
+C:\Users\Rafał\Documents\Dyplom\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\obj\Debug\Views\PersonViews\AddPersonWindowView.g.cs
+C:\Users\Rafał\Documents\Dyplom\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\obj\Debug\Views\PersonViews\PersonListView.g.cs
+C:\Users\Rafał\Documents\Dyplom\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\obj\Debug\Views\PersonViews\PersonView.g.cs
+C:\Users\Rafał\Documents\Dyplom\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\obj\Debug\App.g.cs
+C:\Users\Rafał\Documents\Dyplom\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\obj\Debug\SUR_CSTG_Content.g.cs
+C:\Users\Rafał\Documents\Dyplom\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Rafał\Documents\Dyplom\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\obj\Debug\SUR_CSTG_MarkupCompile.cache
+C:\Users\Rafał\Documents\Dyplom\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\obj\Debug\SUR_CSTG_MarkupCompile.lref
+C:\Users\Rafał\Documents\Dyplom\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\obj\Debug\Views\AreaViews\AreaView.baml
+C:\Users\Rafał\Documents\Dyplom\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\obj\Debug\Views\AreaViews\EditAreaWindowView.baml
+C:\Users\Rafał\Documents\Dyplom\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\obj\Debug\Views\PersonViews\PersonView.baml
+C:\Users\Rafał\Documents\Dyplom\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\obj\Debug\SUR_CSTG.g.resources
+C:\Users\Rafał\Documents\Dyplom\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\obj\Debug\SUR_CSTG.Properties.Resources.resources
+C:\Users\Rafał\Documents\Dyplom\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\obj\Debug\SUR_CSTG.csproj.GenerateResource.Cache
+C:\Users\Rafał\Documents\Dyplom\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\obj\Debug\SUR_CSTG.exe
+C:\Users\Rafał\Documents\Dyplom\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\obj\Debug\SUR_CSTG.pdb
+C:\Users\Rafał\Documents\Dyplom\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\obj\Debug\SUR_CSTG.csprojResolveAssemblyReference.cache
+C:\Users\Rafał\Documents\Dyplom\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\obj\Debug\Views\PersonViews\DeletePersonWindowView.baml
+C:\Users\Rafał\Documents\Dyplom\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\obj\Debug\Views\PersonViews\DeletePersonWindowView.g.cs
+C:\Users\Rafał\Documents\Dyplom\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\obj\Debug\Views\PersonViews\EditPersonWindowView.baml
+C:\Users\Rafał\Documents\Dyplom\Dyplom\Aplikacje\SUR_CSTG_v4 z serch\SUR_CSTG\SUR_CSTG\obj\Debug\Views\PersonViews\EditPersonWindowView.g.cs
+F:\Studia\Dyplom\!FINAL\SUR_CSTG\SUR_CSTG\bin\Debug\SUR_CSTG.exe.config
+F:\Studia\Dyplom\!FINAL\SUR_CSTG\SUR_CSTG\obj\Debug\SUR_CSTG.exe
+F:\Studia\Dyplom\!FINAL\SUR_CSTG\SUR_CSTG\obj\Debug\SUR_CSTG.pdb
+F:\Studia\Dyplom\!FINAL\SUR_CSTG\SUR_CSTG\bin\Debug\SUR_Db.sdf
+F:\Studia\Dyplom\!FINAL\SUR_CSTG\SUR_CSTG\bin\Debug\SUR_CSTG.exe
+F:\Studia\Dyplom\!FINAL\SUR_CSTG\SUR_CSTG\bin\Debug\SUR_CSTG.pdb
+F:\Studia\Dyplom\!FINAL\SUR_CSTG\SUR_CSTG\bin\Debug\EntityFramework.dll
+F:\Studia\Dyplom\!FINAL\SUR_CSTG\SUR_CSTG\bin\Debug\EntityFramework.SqlServer.dll
+F:\Studia\Dyplom\!FINAL\SUR_CSTG\SUR_CSTG\bin\Debug\EntityFramework.SqlServerCompact.dll
+F:\Studia\Dyplom\!FINAL\SUR_CSTG\SUR_CSTG\bin\Debug\System.Data.SqlServerCe.dll
+F:\Studia\Dyplom\!FINAL\SUR_CSTG\SUR_CSTG\bin\Debug\EntityFramework.xml
+F:\Studia\Dyplom\!FINAL\SUR_CSTG\SUR_CSTG\bin\Debug\EntityFramework.SqlServer.xml
+F:\Studia\Dyplom\!FINAL\SUR_CSTG\SUR_CSTG\bin\Debug\EntityFramework.SqlServerCompact.xml
+F:\Studia\Dyplom\!FINAL\SUR_CSTG\SUR_CSTG\obj\Debug\MainWindow.baml
+F:\Studia\Dyplom\!FINAL\SUR_CSTG\SUR_CSTG\obj\Debug\Views\AreaViews\AddAreaWindowView.baml
+F:\Studia\Dyplom\!FINAL\SUR_CSTG\SUR_CSTG\obj\Debug\Views\AreaViews\AreaListView.baml
+F:\Studia\Dyplom\!FINAL\SUR_CSTG\SUR_CSTG\obj\Debug\Views\AreaViews\AreaSerchListView.baml
+F:\Studia\Dyplom\!FINAL\SUR_CSTG\SUR_CSTG\obj\Debug\Views\AreaViews\DeleteAreaWindowView.baml
+F:\Studia\Dyplom\!FINAL\SUR_CSTG\SUR_CSTG\obj\Debug\Views\DeviceViews\DeviceView.baml
+F:\Studia\Dyplom\!FINAL\SUR_CSTG\SUR_CSTG\obj\Debug\Views\GeneralWindowView.baml
+F:\Studia\Dyplom\!FINAL\SUR_CSTG\SUR_CSTG\obj\Debug\Views\PersonViews\AddPersonWindowView.baml
+F:\Studia\Dyplom\!FINAL\SUR_CSTG\SUR_CSTG\obj\Debug\Views\PersonViews\DeletePersonWindowView.baml
+F:\Studia\Dyplom\!FINAL\SUR_CSTG\SUR_CSTG\obj\Debug\Views\PersonViews\EditPersonWindowView.baml
+F:\Studia\Dyplom\!FINAL\SUR_CSTG\SUR_CSTG\obj\Debug\Views\PersonViews\PersonListView.baml
+F:\Studia\Dyplom\!FINAL\SUR_CSTG\SUR_CSTG\obj\Debug\MainWindow.g.cs
+F:\Studia\Dyplom\!FINAL\SUR_CSTG\SUR_CSTG\obj\Debug\Views\AreaViews\AddAreaWindowView.g.cs
+F:\Studia\Dyplom\!FINAL\SUR_CSTG\SUR_CSTG\obj\Debug\Views\AreaViews\AreaListView.g.cs
+F:\Studia\Dyplom\!FINAL\SUR_CSTG\SUR_CSTG\obj\Debug\Views\AreaViews\AreaSerchListView.g.cs
+F:\Studia\Dyplom\!FINAL\SUR_CSTG\SUR_CSTG\obj\Debug\Views\AreaViews\AreaView.g.cs
+F:\Studia\Dyplom\!FINAL\SUR_CSTG\SUR_CSTG\obj\Debug\Views\AreaViews\DeleteAreaWindowView.g.cs
+F:\Studia\Dyplom\!FINAL\SUR_CSTG\SUR_CSTG\obj\Debug\Views\AreaViews\EditAreaWindowView.g.cs
+F:\Studia\Dyplom\!FINAL\SUR_CSTG\SUR_CSTG\obj\Debug\Views\DeviceViews\DeviceView.g.cs
+F:\Studia\Dyplom\!FINAL\SUR_CSTG\SUR_CSTG\obj\Debug\Views\GeneralWindowView.g.cs
+F:\Studia\Dyplom\!FINAL\SUR_CSTG\SUR_CSTG\obj\Debug\Views\PersonViews\AddPersonWindowView.g.cs
+F:\Studia\Dyplom\!FINAL\SUR_CSTG\SUR_CSTG\obj\Debug\Views\PersonViews\DeletePersonWindowView.g.cs
+F:\Studia\Dyplom\!FINAL\SUR_CSTG\SUR_CSTG\obj\Debug\Views\PersonViews\EditPersonWindowView.g.cs
+F:\Studia\Dyplom\!FINAL\SUR_CSTG\SUR_CSTG\obj\Debug\Views\PersonViews\PersonListView.g.cs
+F:\Studia\Dyplom\!FINAL\SUR_CSTG\SUR_CSTG\obj\Debug\Views\PersonViews\PersonView.g.cs
+F:\Studia\Dyplom\!FINAL\SUR_CSTG\SUR_CSTG\obj\Debug\App.g.cs
+F:\Studia\Dyplom\!FINAL\SUR_CSTG\SUR_CSTG\obj\Debug\SUR_CSTG_Content.g.cs
+F:\Studia\Dyplom\!FINAL\SUR_CSTG\SUR_CSTG\obj\Debug\GeneratedInternalTypeHelper.g.cs
+F:\Studia\Dyplom\!FINAL\SUR_CSTG\SUR_CSTG\obj\Debug\SUR_CSTG_MarkupCompile.cache
+F:\Studia\Dyplom\!FINAL\SUR_CSTG\SUR_CSTG\obj\Debug\SUR_CSTG_MarkupCompile.lref
+F:\Studia\Dyplom\!FINAL\SUR_CSTG\SUR_CSTG\obj\Debug\Views\AreaViews\AreaView.baml
+F:\Studia\Dyplom\!FINAL\SUR_CSTG\SUR_CSTG\obj\Debug\Views\AreaViews\EditAreaWindowView.baml
+F:\Studia\Dyplom\!FINAL\SUR_CSTG\SUR_CSTG\obj\Debug\Views\PersonViews\PersonView.baml
+F:\Studia\Dyplom\!FINAL\SUR_CSTG\SUR_CSTG\obj\Debug\SUR_CSTG.g.resources
+F:\Studia\Dyplom\!FINAL\SUR_CSTG\SUR_CSTG\obj\Debug\SUR_CSTG.Properties.Resources.resources
+F:\Studia\Dyplom\!FINAL\SUR_CSTG\SUR_CSTG\obj\Debug\SUR_CSTG.csproj.GenerateResource.Cache
+F:\Studia\Dyplom\!FINAL\SUR_CSTG\SUR_CSTG\obj\Debug\Views\DeviceViews\DeviceListView.baml
+F:\Studia\Dyplom\!FINAL\SUR_CSTG\SUR_CSTG\obj\Debug\Views\DeviceViews\DeviceListView.g.cs
+F:\Studia\Dyplom\!FINAL\SUR_CSTG\SUR_CSTG\obj\Debug\Views\DeviceViews\AddDeviceWindowView.baml
+F:\Studia\Dyplom\!FINAL\SUR_CSTG\SUR_CSTG\obj\Debug\Views\DeviceViews\AddDeviceWindowView.g.cs

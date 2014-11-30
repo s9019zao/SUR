@@ -1,0 +1,54 @@
+﻿<Window x:Class="SUR_CSTG.Views.AreaViews.EditAreaWindowView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="clr-namespace:SUR_CSTG.ViewModels.AreaViewModels"
+        Title="EditAreaWindowView" WindowStartupLocation="CenterScreen"
+        Height="300" Width="350">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Row="0" Grid.ColumnSpan="5"/>
+        <TextBlock Grid.Row="1" Grid.Column="0" 
+                   Text="Nazwa: " HorizontalAlignment="Right" FontSize="14" >
+        </TextBlock>
+        <TextBox Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" FontSize="14"
+                 Text="{Binding Path=Name, UpdateSourceTrigger=PropertyChanged, NotifyOnValidationError=True, Mode=TwoWay}" >
+        </TextBox>
+
+        <TextBlock Grid.Row="2" Grid.ColumnSpan="5"/>
+        <TextBlock Grid.Row="3" Grid.Column="0" 
+                   Text="Opis: " HorizontalAlignment="Right" FontSize="14">
+        </TextBlock>
+        <TextBox Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="3" FontSize="14"
+                 Text="{Binding Path=Description, UpdateSourceTrigger=PropertyChanged, NotifyOnValidationError=True, Mode=TwoWay}">
+        </TextBox>
+
+        <TextBlock Grid.Row="4" Grid.ColumnSpan="5"/>
+        <StackPanel Grid.Row="5" Grid.ColumnSpan="5">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button Content="Zapisz" Grid.Column="1" FontSize="14" Command="{Binding Path=EditCommand}" />
+                <Button Content="Anuluj" FontSize="14" Grid.Column="3" Command="{Binding Path=CloseCommand}"/>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Window>
