@@ -205,3 +205,6 @@ F:\Studia\Dyplom\!FINAL\SUR_CSTG\SUR_CSTG\obj\Debug\Views\DeviceViews\DeviceList
 F:\Studia\Dyplom\!FINAL\SUR_CSTG\SUR_CSTG\obj\Debug\Views\DeviceViews\DeviceListView.g.cs
 F:\Studia\Dyplom\!FINAL\SUR_CSTG\SUR_CSTG\obj\Debug\Views\DeviceViews\AddDeviceWindowView.baml
 F:\Studia\Dyplom\!FINAL\SUR_CSTG\SUR_CSTG\obj\Debug\Views\DeviceViews\AddDeviceWindowView.g.cs
+F:\Studia\Dyplom\!FINAL\REPO\SUR_CSTG\SUR_CSTG\bin\Debug\SUR_CSTG.exe.config
+F:\Studia\Dyplom\!FINAL\REPO\SUR_CSTG\SUR_CSTG\obj\Debug\SUR_CSTG.exe
+F:\Studia\Dyplom\!FINAL\REPO\SUR_CSTG\SUR_CSTG\obj\Debug\SUR_CSTG.pdb

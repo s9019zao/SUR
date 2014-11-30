@@ -1,21 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows;
 using System.Windows.Input;
 using SUR_CSTG.Data;
 
-namespace SUR_CSTG.ViewModels.AreaViewModels
+namespace SUR_CSTG.ViewModels.DeviceViewModels
 {
-    public class DeleteAreaWindowViewModel : ViewModel
+    public class DeleteDeviceWindowViewModel : ViewModel
     {
         #region Fields
 
-        AreaViewModel _areaViewModel;
-        Area _areaToDelete;
+        DeviceViewModel _deviceViewModel;
+        Device _deviceToDelete;
         ICommand _closeWinndow;
         ICommand _delete;
 
@@ -23,32 +21,32 @@ namespace SUR_CSTG.ViewModels.AreaViewModels
 
         #region Constructors
 
-        public DeleteAreaWindowViewModel(AreaViewModel areaViewModel)
+        public DeleteDeviceWindowViewModel(DeviceViewModel deviceViewModel)
         {
-            _areaViewModel = areaViewModel;
+            _deviceViewModel = deviceViewModel;
         }
 
         #endregion
 
         #region Properities
 
-        public AreaViewModel AreaViewModel
+        public DeviceViewModel DeviceViewModel
         {
-            get { return _areaViewModel; }
+            get { return _deviceViewModel; }
             set
             {
-                _areaViewModel = value;
+                _deviceViewModel = value;
 
                 OnPropertyChanged("");
             }
         }
 
-        public Area AreaToDelete
+        public Device DeviceToDelete
         {
-            get { return _areaToDelete; }
+            get { return _deviceToDelete; }
             set
             {
-                _areaToDelete = value;
+                _deviceToDelete = value;
                 OnPropertyChanged("");
             }
         }
@@ -62,10 +60,10 @@ namespace SUR_CSTG.ViewModels.AreaViewModels
         }
 
         public void Delete(object obj)
-        {           
-            _areaViewModel.AreaListViewModel.Areas.Remove(AreaToDelete);
-            _areaViewModel.Ctx.Areas.Remove(AreaToDelete);
-            _areaViewModel.Ctx.SaveChanges();
+        {
+            _deviceViewModel.DeviceListViewModel.Devices.Remove(DeviceToDelete);
+            _deviceViewModel.Ctx.Devices.Remove(DeviceToDelete);
+            _deviceViewModel.Ctx.SaveChanges();
             OnPropertyChanged("");
             Close(obj);
         }

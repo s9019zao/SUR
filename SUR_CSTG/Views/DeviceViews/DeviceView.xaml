@@ -47,7 +47,7 @@
                         Command="{Binding Path=OpenEditAreaCommand}">
                 </Button>
                 <Button Content="Usuń" Grid.Row="5" FontSize="14"
-                        Command="{Binding Path=OpenDeleteAreaCommand}">
+                        Command="{Binding Path=OpenDeleteDeviceCommand}">
                 </Button>
             </Grid>
         </StackPanel>
