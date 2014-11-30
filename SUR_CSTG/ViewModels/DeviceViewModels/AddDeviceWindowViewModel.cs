@@ -86,7 +86,6 @@ namespace SUR_CSTG.ViewModels.DeviceViewModels
             _ctx.Devices.Add(new Device { Name = Name, Description = Description, Area = SelectArea });
             _ctx.SaveChanges();
             var result = MessageBox.Show(message + "O nazwie: " + Name, titel);
-            int a = 1;
             Close(obj);
         }
 

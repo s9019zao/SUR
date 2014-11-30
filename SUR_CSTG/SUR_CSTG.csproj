@@ -84,6 +84,7 @@
     </ApplicationDefinition>
     <Compile Include="Data\Area.cs" />
     <Compile Include="Data\Device.cs" />
+    <Compile Include="Data\Enums.cs" />
     <Compile Include="Data\Initializer.cs" />
     <Compile Include="Data\Person.cs" />
     <Compile Include="Data\SUR_DbContext.cs" />
@@ -99,8 +100,10 @@
     <Compile Include="ViewModels\AreaViewModels\DeleteAreaWindowViewModel.cs" />
     <Compile Include="ViewModels\AreaViewModels\EditAreaWindowViewModel.cs" />
     <Compile Include="ViewModels\DeviceViewModels\AddDeviceWindowViewModel.cs" />
+    <Compile Include="ViewModels\DeviceViewModels\DeleteDeviceWindowViewModel.cs" />
     <Compile Include="ViewModels\DeviceViewModels\DeviceListViewModel.cs" />
     <Compile Include="ViewModels\DeviceViewModels\DeviceViewModel.cs" />
+    <Compile Include="ViewModels\DeviceViewModels\EditDeviceWindowViewModel.cs" />
     <Compile Include="ViewModels\GeneralWindowViewModel.cs" />
     <Compile Include="ViewModels\MainWindowViewModel.cs" />
     <Compile Include="ViewModels\PersonViewModels\AddPersonWindowViewModel.cs" />
@@ -131,11 +134,17 @@
     <Compile Include="Views\DeviceViews\AddDeviceWindowView.xaml.cs">
       <DependentUpon>AddDeviceWindowView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\DeviceViews\DeleteDeviceWindowView.xaml.cs">
+      <DependentUpon>DeleteDeviceWindowView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\DeviceViews\DeviceListView.xaml.cs">
       <DependentUpon>DeviceListView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\DeviceViews\DeviceView.xaml.cs">
       <DependentUpon>DeviceView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DeviceViews\EditDeviceWindowView.xaml.cs">
+      <DependentUpon>EditDeviceWindowView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\GeneralWindowView.xaml.cs">
       <DependentUpon>GeneralWindowView.xaml</DependentUpon>
@@ -195,11 +204,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\DeviceViews\DeleteDeviceWindowView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Views\DeviceViews\DeviceListView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\DeviceViews\DeviceView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\DeviceViews\EditDeviceWindowView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

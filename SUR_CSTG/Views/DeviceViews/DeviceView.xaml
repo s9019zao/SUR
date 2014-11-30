@@ -44,7 +44,7 @@
                         Command="{Binding Path=OpenAddDeviceCommand}">
                 </Button>
                 <Button Content="Edytuj" Grid.Row="3" FontSize="14" 
-                        Command="{Binding Path=OpenEditAreaCommand}">
+                        Command="{Binding Path=OpenEditDeviceCommand}">
                 </Button>
                 <Button Content="Usuń" Grid.Row="5" FontSize="14"
                         Command="{Binding Path=OpenDeleteDeviceCommand}">

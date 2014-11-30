@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 F:\Studia\Dyplom\!FINAL\REPO\SUR_CSTG\SUR_CSTG\App.xaml
-16893231947
+18767411618
 1-249064015
-48-2076064898
+53-871766383
 17-1736002388
-MainWindow.xaml;Views\AreaViews\AddAreaWindowView.xaml;Views\AreaViews\AreaListView.xaml;Views\AreaViews\AreaSerchListView.xaml;Views\AreaViews\AreaView.xaml;Views\AreaViews\DeleteAreaWindowView.xaml;Views\AreaViews\EditAreaWindowView.xaml;Views\DeviceViews\AddDeviceWindowView.xaml;Views\DeviceViews\DeviceListView.xaml;Views\DeviceViews\DeviceView.xaml;Views\GeneralWindowView.xaml;Views\PersonViews\AddPersonWindowView.xaml;Views\PersonViews\DeletePersonWindowView.xaml;Views\PersonViews\EditPersonWindowView.xaml;Views\PersonViews\PersonListView.xaml;Views\PersonViews\PersonView.xaml;
+MainWindow.xaml;Views\AreaViews\AddAreaWindowView.xaml;Views\AreaViews\AreaListView.xaml;Views\AreaViews\AreaSerchListView.xaml;Views\AreaViews\AreaView.xaml;Views\AreaViews\DeleteAreaWindowView.xaml;Views\AreaViews\EditAreaWindowView.xaml;Views\DeviceViews\AddDeviceWindowView.xaml;Views\DeviceViews\DeleteDeviceWindowView.xaml;Views\DeviceViews\DeviceListView.xaml;Views\DeviceViews\DeviceView.xaml;Views\DeviceViews\EditDeviceWindowView.xaml;Views\GeneralWindowView.xaml;Views\PersonViews\AddPersonWindowView.xaml;Views\PersonViews\DeletePersonWindowView.xaml;Views\PersonViews\EditPersonWindowView.xaml;Views\PersonViews\PersonListView.xaml;Views\PersonViews\PersonView.xaml;
 
-True
+False
 

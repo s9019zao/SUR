@@ -64,6 +64,31 @@ namespace SUR_CSTG.ViewModels.DeviceViewModels
             OnPropertyChanged("");
         }
 
+        public ICommand OpenEditDeviceCommand
+        {
+            get { return _openEditDevice ?? (_openEditDevice = new RelayCommand(OpenEditDeviceWindowView)); }
+        }
+
+        private void OpenEditDeviceWindowView(object obj)
+        {
+            if (this._deviceListViewModel.SelectedDevice != null)
+            {
+                var window = new EditDeviceWindowView();
+                EditDeviceWindowViewModel vm = new EditDeviceWindowViewModel(this);
+                vm.DeviceToEdit = this._deviceListViewModel.SelectedDevice;
+                window.DataContext = vm;
+                window.ShowDialog();
+                _ctx.SaveChanges();
+                _deviceListViewModel.Devices = _ctx.Devices.ToList();
+                OnPropertyChanged("");
+            }
+            else
+            {
+                string mess = "Nie wybrano obiektu do edycji";
+                var message = MessageBox.Show(mess);
+            }
+        }
+
         public ICommand OpenDeleteDeviceCommand
         {
             get { return _openDeleteDevice ?? (_openDeleteDevice = new RelayCommand(OpenDeleteDeviceWindowView)); }
