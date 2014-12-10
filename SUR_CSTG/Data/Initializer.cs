@@ -107,7 +107,70 @@ namespace SUR_CSTG.Data
            Device device3 = new Device
            {
                Name = "Urządzenie3",
-               Description = "Jakiś3",
+               Description = "Jakiś3"
+           };
+
+           Device device4 = new Device
+           {
+               Name = "Urządzenie4",
+               Description = "Jakiś4"
+           };
+
+           Device device5 = new Device
+           {
+               Name = "Urządzenie5",
+               Description = "Jakiś5"
+           };
+
+           Device device6 = new Device
+           {
+               Name = "Urządzenie6",
+               Description = "Jakiś6"
+           };
+
+           Device device7 = new Device
+           {
+               Name = "Urządzenie7",
+               Description = "Jakiś7"
+           };
+
+           Device device8 = new Device
+           {
+               Name = "Urządzenie8",
+               Description = "Jakiś8"
+           };
+
+           Device device9 = new Device
+           {
+               Name = "Urządzenie9",
+               Description = "Jakiś9"
+           };
+
+           #endregion
+
+           #region Part
+           Part part1 = new Part
+           {
+               Name = "Część1",
+               PartType = Data.PartType.Automatyka,
+               Unit = Data.Unit.kg,
+               Quantity = 2.40
+           };
+
+           Part part2 = new Part
+           {
+               Name = "Część2",
+               PartType = Data.PartType.Elektryka,
+               Unit = Data.Unit.szt,
+               Quantity = 3.00
+           };
+
+           Part part3 = new Part
+           {
+               Name = "Część3",
+               PartType = Data.PartType.Mechanika,
+               Unit = Data.Unit.m,
+               Quantity = 4.00
            };
 
            #endregion
@@ -115,19 +178,38 @@ namespace SUR_CSTG.Data
            ctx.Devices.Add(device1);
            ctx.Devices.Add(device2);
            ctx.Devices.Add(device3);
+           ctx.Devices.Add(device4);
+           ctx.Devices.Add(device5);
+           ctx.Devices.Add(device6);
+           ctx.Devices.Add(device7);
+           ctx.Devices.Add(device8);
+           ctx.Devices.Add(device9);
+           
            area1.Devices.Add(device1);
            area1.Devices.Add(device2);
-           area1.Devices.Add(device3);
+           area2.Devices.Add(device3);
+           area2.Devices.Add(device4);
+           area3.Devices.Add(device5);
+           area3.Devices.Add(device6);
+           area4.Devices.Add(device7);
+           area5.Devices.Add(device8);
+           area5.Devices.Add(device9);
            ctx.Areas.Add(area1);
            ctx.Areas.Add(area2);
            ctx.Areas.Add(area3);
            ctx.Areas.Add(area4);
            ctx.Areas.Add(area5);
+           
            ctx.Persons.Add(person1);
            ctx.Persons.Add(person2);
            ctx.Persons.Add(person3);
            ctx.Persons.Add(person4);
            ctx.Persons.Add(person5);
+
+           ctx.Parts.Add(part1);
+           ctx.Parts.Add(part2);
+           ctx.Parts.Add(part3);
+
            ctx.SaveChanges();
 
         }

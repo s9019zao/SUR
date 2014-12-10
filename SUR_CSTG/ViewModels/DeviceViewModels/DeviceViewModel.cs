@@ -28,6 +28,7 @@ namespace SUR_CSTG.ViewModels.DeviceViewModels
         public DeviceViewModel()
         {
             DeviceListViewModel = new DeviceListViewModel();
+            GetAreas();
         }
 
         #endregion
@@ -35,6 +36,12 @@ namespace SUR_CSTG.ViewModels.DeviceViewModels
         #region Properities
 
         public SUR_DbContext Ctx { get { return _ctx; } }
+        public ObservableCollection<Area> AllAreas { get; set; }
+
+        public void GetAreas()
+        {
+            AllAreas = new ObservableCollection<Area>(_ctx.Areas);
+        }
 
         public DeviceListViewModel DeviceListViewModel
         {
@@ -58,7 +65,7 @@ namespace SUR_CSTG.ViewModels.DeviceViewModels
 
         private void OpenAddDeviceWindowView(object obj)
         {
-            var window = new AddDeviceWindowView();
+            var window = new AddDeviceWindowView(); 
             window.ShowDialog();
             DeviceListViewModel.Devices = new ObservableCollection<Device>(_ctx.Devices);
             OnPropertyChanged("");

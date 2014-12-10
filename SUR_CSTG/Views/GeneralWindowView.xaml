@@ -31,7 +31,7 @@
         <Button Grid.Row="2" Grid.Column="4" Content="Rejony" Command="{Binding Path=OpenAreaViewCommand}"></Button>
         <Button Grid.Row="2" Grid.Column="5" Content="xxxxxx"></Button>
         <Button Grid.Row="2" Grid.Column="6" Content="yyyyyy"></Button>
-        <Button Grid.Row="2" Grid.Column="7" Content="zzzzzz"></Button>
+        <Button Grid.Row="2" Grid.Column="7" Content="Części" Command="{Binding Path=OpenPartViewCommand}"></Button>
         <Border Grid.Row="3" Grid.ColumnSpan="8">
             <ContentControl Content="{Binding SelectedView}"/>
         </Border>

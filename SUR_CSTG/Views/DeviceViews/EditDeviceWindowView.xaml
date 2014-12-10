@@ -41,9 +41,9 @@
         </TextBlock>
         <ComboBox Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="3" FontSize="14" 
                   ToolTip="Wybierz rejon"
-                  ItemsSource="{Binding AllAreas, Mode=OneWay}"
+                  ItemsSource="{Binding AllAreas, UpdateSourceTrigger=PropertyChanged, NotifyOnValidationError=True, Mode=TwoWay}"
                   DisplayMemberPath="Name"
-                  SelectedItem="{Binding SelectArea}"
+                  SelectedItem="{Binding Path=SelectArea}"
                   SelectedValue="{Binding Path=AreaToEdit}">
         </ComboBox>
         <TextBlock Grid.Row="6" Grid.ColumnSpan="5"/>

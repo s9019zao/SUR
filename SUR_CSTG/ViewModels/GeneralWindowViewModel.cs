@@ -10,6 +10,7 @@ using System.Windows.Input;
 using System.Windows;
 using SUR_CSTG.Data;
 using SUR_CSTG.Views.PersonViews;
+using SUR_CSTG.Views.PartViews;
 
 namespace SUR_CSTG.ViewModels
 {
@@ -20,8 +21,8 @@ namespace SUR_CSTG.ViewModels
         ICommand _showArea;
         ICommand _showDevice;
         ICommand _showPerson;
+        ICommand _showPart;
         UserControl _selectedView;
-        SUR_DbContext _ctx = new SUR_DbContext();
 
         #endregion
 
@@ -48,8 +49,7 @@ namespace SUR_CSTG.ViewModels
         private void OpenAreaView(object obj)
         {
             var view = new AreaView();
-            SelectedView = view;
-            
+            SelectedView = view;            
         }
 
         public ICommand OpenDeviceViewCommand 
@@ -61,9 +61,7 @@ namespace SUR_CSTG.ViewModels
         {
             var view = new DeviceView();
             SelectedView = view;
-
         }
-
 
         public ICommand OpenPersonViewCommand
         {
@@ -74,7 +72,17 @@ namespace SUR_CSTG.ViewModels
         {
             var view = new PersonView();
             SelectedView = view;
+        }
 
+        public ICommand OpenPartViewCommand
+        {
+            get { return _showPart ?? (_showPart = new RelayCommand(OpenPartView)); }
+        }
+
+        private void OpenPartView(object obj)
+        {
+            var view = new PartView();
+            SelectedView = view;
         }
 
         #endregion

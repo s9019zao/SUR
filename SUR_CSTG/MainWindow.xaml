@@ -4,6 +4,39 @@
         Title="MainWindow" WindowStartupLocation="CenterScreen"
         Height="350" Width="525">
     <Grid>
-        <Button Margin="195,34,176,223" Content="Tu będzie logowanie" Command="{Binding Path=OpenGeneralWindowCommand}"></Button>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="1" Grid.RowSpan="2">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.7*"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="0.7*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="1" Grid.Row="0" Text="Login: "
+                           FontSize="20" HorizontalAlignment="Right"/>
+                <TextBox Grid.Column="2" Grid.Row="0" Grid.ColumnSpan="2"/>
+                <TextBlock Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="1"/>
+                <TextBlock Grid.Column="1" Grid.Row="2" Text="Hasło: "
+                           FontSize="20" HorizontalAlignment="Right"/>
+                <PasswordBox Grid.Column="2" Grid.Row="2" Grid.ColumnSpan="2"/>
+                <TextBlock Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="3"/>
+                <Button Grid.Column="3" Grid.Row="4"
+                        Content="Logowanie nie działa" Command="{Binding Path=OpenGeneralWindowCommand}"/>
+            </Grid>
+        </StackPanel>
     </Grid>
 </Window>

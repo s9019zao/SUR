@@ -19,6 +19,6 @@ namespace SUR_CSTG.Data
         public DbSet<Area> Areas { get; set; }
         public DbSet<Person> Persons { get; set; }
         public DbSet<Device> Devices { get; set; }
-
+        public DbSet<Part> Parts { get; set; }
     }
 }

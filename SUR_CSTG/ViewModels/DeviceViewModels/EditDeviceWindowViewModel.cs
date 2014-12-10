@@ -122,7 +122,7 @@ namespace SUR_CSTG.ViewModels.DeviceViewModels
         {
             DeviceToEdit.Name = Name;
             DeviceToEdit.Description = Description;
-            DeviceToEdit.Area = SelectedArea;
+            DeviceToEdit.Area = AreaToEdit;
             _ctx.SaveChanges();
             Close(obj);
         }

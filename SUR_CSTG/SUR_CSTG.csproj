@@ -83,9 +83,11 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Data\Area.cs" />
+    <Compile Include="Data\Breakdown.cs" />
     <Compile Include="Data\Device.cs" />
     <Compile Include="Data\Enums.cs" />
     <Compile Include="Data\Initializer.cs" />
+    <Compile Include="Data\Part.cs" />
     <Compile Include="Data\Person.cs" />
     <Compile Include="Data\SUR_DbContext.cs" />
     <Compile Include="SUR_Db.Designer.cs">
@@ -106,6 +108,12 @@
     <Compile Include="ViewModels\DeviceViewModels\EditDeviceWindowViewModel.cs" />
     <Compile Include="ViewModels\GeneralWindowViewModel.cs" />
     <Compile Include="ViewModels\MainWindowViewModel.cs" />
+    <Compile Include="ViewModels\PartViewModels\AddPartWindowViewModel.cs" />
+    <Compile Include="ViewModels\PartViewModels\DeletePartWindowViewModel.cs" />
+    <Compile Include="ViewModels\PartViewModels\EditPartWindowViewModel.cs" />
+    <Compile Include="ViewModels\PartViewModels\EditQuantityPartWindowViewModel.cs" />
+    <Compile Include="ViewModels\PartViewModels\PartListViewModel.cs" />
+    <Compile Include="ViewModels\PartViewModels\PartViewModel.cs" />
     <Compile Include="ViewModels\PersonViewModels\AddPersonWindowViewModel.cs" />
     <Compile Include="ViewModels\PersonViewModels\DeletePersonWindowViewModel.cs" />
     <Compile Include="ViewModels\PersonViewModels\EditPersonWindowViewModel.cs" />
@@ -148,6 +156,24 @@
     </Compile>
     <Compile Include="Views\GeneralWindowView.xaml.cs">
       <DependentUpon>GeneralWindowView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PartViews\AddPartWindowView.xaml.cs">
+      <DependentUpon>AddPartWindowView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PartViews\DeletePartWindowView.xaml.cs">
+      <DependentUpon>DeletePartWindowView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PartViews\EditPartWindowView.xaml.cs">
+      <DependentUpon>EditPartWindowView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PartViews\EditQuantityPartWindowView.xaml.cs">
+      <DependentUpon>EditQuantityPartWindowView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PartViews\PartListView.xaml.cs">
+      <DependentUpon>PartListView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PartViews\PartView.xaml.cs">
+      <DependentUpon>PartView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\PersonViews\AddPersonWindowView.xaml.cs">
       <DependentUpon>AddPersonWindowView.xaml</DependentUpon>
@@ -221,6 +247,30 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\GeneralWindowView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PartViews\AddPartWindowView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PartViews\DeletePartWindowView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PartViews\EditPartWindowView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PartViews\EditQuantityPartWindowView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PartViews\PartListView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PartViews\PartView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -311,6 +361,7 @@
       <Install>true</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>
