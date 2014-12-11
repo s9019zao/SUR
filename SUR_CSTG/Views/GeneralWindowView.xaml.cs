@@ -23,7 +23,6 @@ namespace SUR_CSTG.Views
         public GeneralWindowView()
         {
             InitializeComponent();
-            DataContext = new GeneralWindowViewModel();
         }
     }
 }

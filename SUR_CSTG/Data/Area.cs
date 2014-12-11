@@ -13,7 +13,9 @@ namespace SUR_CSTG.Data
         public int AreaId { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
-        public virtual ICollection<Device> Devices { get; set; }
+
+        // Inicjalizacja relacji w bazie danych
+        public virtual ICollection<Device> Devices { get; set; } //Lista urządzeń rejonu
 
         public Area()
         {

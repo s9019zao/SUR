@@ -18,6 +18,12 @@ namespace SUR_CSTG.ViewModels
     {
         #region Fields
 
+        MainWindowViewModel _mainWindowViewModel;
+        Person _person;
+        string _nameSurname;
+        Position _position;
+        ICommand _logout;
+        ICommand _closeWinndow;
         ICommand _showArea;
         ICommand _showDevice;
         ICommand _showPerson;
@@ -26,7 +32,30 @@ namespace SUR_CSTG.ViewModels
 
         #endregion
 
+        #region Constructors
+
+        public GeneralWindowViewModel(MainWindowViewModel mainWindowViewModel)
+        {
+            _mainWindowViewModel = mainWindowViewModel;
+           
+        }
+
+        #endregion
+
         #region Properities
+
+        public Person Person
+        {
+            get { return _person; }
+            set
+            {
+                _person = value;
+                Position = value.Position;
+                NameSurname = value.Name + " " + value.Surname;
+                OnPropertyChanged("");
+            }
+        }
+
         public UserControl SelectedView
         {
             get { return _selectedView; }
@@ -37,9 +66,56 @@ namespace SUR_CSTG.ViewModels
             }
         }
 
+        public Position Position
+        {
+            get { return _position; }
+            set
+            {
+                _position = value;
+                OnPropertyChanged("");
+            }
+        }
+
+        public string NameSurname
+        {
+            get { return _nameSurname; }
+            set
+            {
+                _nameSurname = value;
+                OnPropertyChanged("");
+            }
+        }
+
         #endregion
 
         #region Command
+
+        public ICommand LogoutCommand
+        {
+            get { return _logout ?? (_logout = new RelayCommand(Logout)); }
+        }
+
+        private void Logout(object obj)
+        {
+            var window = new MainWindow();
+            window.Show();
+            Close(obj);
+        }
+
+        public ICommand CloseCommand
+        {
+            get { return _closeWinndow ?? (_closeWinndow = new RelayCommand(Close)); }
+        }
+        public void Close(object obj)
+        {
+            foreach (System.Windows.Window window in System.Windows.Application.Current.Windows)
+            {
+                if (window.DataContext == this)
+                {
+                    window.Close();
+                }
+            }
+        }
 
         public ICommand OpenAreaViewCommand 
         { 

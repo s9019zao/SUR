@@ -18,6 +18,16 @@ namespace SUR_CSTG.Data
         public string Login { get; set; }
         public Position Position { get ; set;}
         public string PhoneNumber { get; set; }
+
+        // Inicjalizacja relacji w bazie danych
+        public virtual ICollection<Breakdown> RequestedBreakdowns { get; set; } // Lista awari zgłoszonych
+        public virtual ICollection<Breakdown> FixedBreakdowns { get; set; } // Lista awarii usuniętych
+
+        public Person()
+        {
+            RequestedBreakdowns = new List<Breakdown>();
+            FixedBreakdowns = new List<Breakdown>();
+        }
   
     }
 }

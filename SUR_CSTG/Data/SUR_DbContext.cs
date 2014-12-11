@@ -16,9 +16,11 @@ namespace SUR_CSTG.Data
             Configuration.ProxyCreationEnabled = false;
         }
 
+        // Inicjalizacja Tabel
         public DbSet<Area> Areas { get; set; }
         public DbSet<Person> Persons { get; set; }
         public DbSet<Device> Devices { get; set; }
         public DbSet<Part> Parts { get; set; }
+        public DbSet<Breakdown> Breakdowns { get; set; }
     }
 }

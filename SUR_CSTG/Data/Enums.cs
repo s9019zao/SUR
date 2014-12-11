@@ -29,4 +29,19 @@ namespace SUR_CSTG.Data
         kg = 2,
         m = 3
     }
+
+    public enum StatusBreakdown
+    {
+        Zgłoszona = 1,
+        Oczekująca = 2,
+        Usuwana = 3,
+        Usunięta = 4
+    }
+
+    public enum BreakedownType
+    {
+        Automatczna = 1,
+        Elektryczna = 2,
+        Mechaniczna = 3
+    }
 }

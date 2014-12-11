@@ -15,5 +15,13 @@ namespace SUR_CSTG.Data
         public double Quantity { get; set; }
         public PartType PartType { get; set; }
         public Unit Unit { get; set; }
+
+        // Inicjalizacja relacji w bazie danych
+        public virtual ICollection<Breakdown> UsedPartBreakdowns { get; set; } //Lista awarii do których część została użyta
+
+        public Part()
+        {
+            UsedPartBreakdowns = new List<Breakdown>();
+        }
     }
 }

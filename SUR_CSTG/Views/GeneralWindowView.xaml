@@ -21,8 +21,13 @@
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <TextBlock Grid.Row="0" Grid.Column="4" Grid.ColumnSpan="3" Text="Jesteś zalogowany" />
-        <Button Grid.Row="0" Grid.Column="7" Content="Wyloguj"></Button>
+        <TextBlock Grid.Row="0" Grid.Column="3" Text="Jesteś zalogowany jako: " HorizontalAlignment="Right"/>
+        <TextBlock Grid.Row="0" Grid.Column="4" FontWeight="Bold"
+                   Text="{Binding Path=NameSurname, UpdateSourceTrigger=PropertyChanged, NotifyOnValidationError=True, Mode=TwoWay}" HorizontalAlignment="Left"/>
+        <TextBlock Grid.Row="0" Grid.Column="5" Text="Stanowisko: " HorizontalAlignment="Right"/>
+        <TextBlock Grid.Row="0" Grid.Column="6" FontWeight="Bold"
+                   Text="{Binding Path=Position, UpdateSourceTrigger=PropertyChanged, NotifyOnValidationError=True, Mode=TwoWay}" HorizontalAlignment="Left"/>
+        <Button Grid.Row="0" Grid.Column="7" Content="Wyloguj" Command="{Binding Path=LogoutCommand}"></Button>
         <TextBlock Grid.Row="1" Grid.ColumnSpan="8" Text="SUR_CSTG" FontSize="35" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Button Grid.Row="2" Grid.Column="0" Content="Pracownicy" Command="{Binding Path=OpenPersonViewCommand}"/>
         <Button Grid.Row="2" Grid.Column="1" Content="Awarie"></Button>

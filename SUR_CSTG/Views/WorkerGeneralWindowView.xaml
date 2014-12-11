@@ -1,0 +1,47 @@
+﻿<Window x:Class="SUR_CSTG.Views.WorkerGeneralWindowView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="WorkerGeneralWindowView" WindowState="Maximized"
+        Height="300" Width="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Row="0" Grid.Column="3" Text="Jesteś zalogowany jako: " HorizontalAlignment="Right"/>
+        <TextBlock Grid.Row="0" Grid.Column="4" FontWeight="Bold"
+                   Text="{Binding Path=NameSurname, UpdateSourceTrigger=PropertyChanged, NotifyOnValidationError=True, Mode=TwoWay}" HorizontalAlignment="Left"/>
+        <TextBlock Grid.Row="0" Grid.Column="5" Text="Stanowisko: " HorizontalAlignment="Right"/>
+        <TextBlock Grid.Row="0" Grid.Column="6" FontWeight="Bold"
+                   Text="{Binding Path=Position, UpdateSourceTrigger=PropertyChanged, NotifyOnValidationError=True, Mode=TwoWay}" HorizontalAlignment="Left"/>
+        <Button Grid.Row="0" Grid.Column="7" Content="Wyloguj" Command="{Binding Path=LogoutCommand}"></Button>
+        <TextBlock Grid.Row="1" Grid.ColumnSpan="8" Text="SUR_CSTG" FontSize="35" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <StackPanel Grid.Row="2" Grid.Column="0">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Button Grid.Row="1" Content="Dodaj Awarie" Command="{Binding Path=OpenAddBreakdownViewCommand}"/>
+                <Button Grid.Row="3" Content="Zmień Hasło" Command="{Binding Path=OpenChangePasswordViewCommand}"/>
+            </Grid>
+        </StackPanel>
+        <Border Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="7">
+            <ContentControl Content="{Binding SelectedView}"/>
+        </Border>
+    </Grid>
+</Window>
