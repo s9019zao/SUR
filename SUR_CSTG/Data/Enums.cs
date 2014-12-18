@@ -44,4 +44,11 @@ namespace SUR_CSTG.Data
         Elektryczna = 2,
         Mechaniczna = 3
     }
+
+    public enum DeviceStatus
+    {
+        Aktywne = 1,
+        Nieaktywne = 2,
+        Usunięte = 3
+    }
 }

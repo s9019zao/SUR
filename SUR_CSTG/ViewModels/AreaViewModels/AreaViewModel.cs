@@ -18,7 +18,10 @@ namespace SUR_CSTG.ViewModels.AreaViewModels
 
         AreaListViewModel _areaListViewModel;
         AreaSerchListViewModel _areaSerchListViewModel;
+        GeneralWindowViewModel _generalWindowViewModel;
         SUR_DbContext _ctx = new SUR_DbContext();
+        public ObservableCollection<Area> Areas { get; set; }
+        public ObservableCollection<Device> Devices { get; set; }
         string _nameToSerch;
         string _descriptionToSerch;
         ICommand _openAddArea;
@@ -30,10 +33,13 @@ namespace SUR_CSTG.ViewModels.AreaViewModels
 
         #region Constructors
 
-        public AreaViewModel()
+        public AreaViewModel(GeneralWindowViewModel generalWindowViewModel)
         {
+            _generalWindowViewModel = generalWindowViewModel;
             AreaListViewModel = new AreaListViewModel();
             AreaSerchListViewModel = new AreaSerchListViewModel();
+            Areas = new ObservableCollection<Area>(_ctx.Areas);
+            Devices = new ObservableCollection<Device>(_ctx.Devices);
         }
 
         #endregion
@@ -88,10 +94,17 @@ namespace SUR_CSTG.ViewModels.AreaViewModels
 
         #region Commands
 
-
         public ICommand OpenAddAreaCommand 
         { 
-            get { return _openAddArea ?? (_openAddArea = new RelayCommand(OpenAddAreaWindowView)); } 
+            get { return _openAddArea ?? (_openAddArea = new RelayCommand(OpenAddAreaWindowView, CanAddArea)); } 
+        }
+
+        private bool CanAddArea(object obj)
+        {
+            if (_generalWindowViewModel.Position == Position.Mistrz || _generalWindowViewModel.Position == Position.Kierownik)
+                return true;
+            else
+                return false;
         }
 
         private void OpenAddAreaWindowView(object obj)
@@ -136,11 +149,19 @@ namespace SUR_CSTG.ViewModels.AreaViewModels
         {
             if (this._areaListViewModel.SelectedArea != null)
             {
-                var window = new DeleteAreaWindowView();
-                DeleteAreaWindowViewModel vm = new DeleteAreaWindowViewModel(this);
-                vm.AreaToDelete = this._areaListViewModel.SelectedArea;
-                window.DataContext = vm;
-                window.ShowDialog();
+                if (this._areaListViewModel.SelectedArea.Devices.LongCount() == 0)
+                {
+                    var window = new DeleteAreaWindowView();
+                    DeleteAreaWindowViewModel vm = new DeleteAreaWindowViewModel(this);
+                    vm.AreaToDelete = this._areaListViewModel.SelectedArea;
+                    window.DataContext = vm;
+                    window.ShowDialog();
+                }
+                else
+                {
+                    string mess = "W rejonie znajduje się urządzeń: " + _areaListViewModel.SelectedArea.Devices.LongCount();
+                    var message = MessageBox.Show(mess);
+                }
             }
             else
             {

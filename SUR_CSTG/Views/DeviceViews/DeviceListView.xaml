@@ -16,7 +16,8 @@
                 <DataGridTextColumn Header="Id Urządzenia" Binding="{Binding Path=DeviceId}" />
                 <DataGridTextColumn Header="Nazwa Urządzenia" Binding="{Binding Path=Name}" />
                 <DataGridTextColumn Header="Rejon" Binding="{Binding Path=Area.Name}" />
-                <DataGridTextColumn Header="Opis Urządzenia" Binding="{Binding Path=Description}" Width="*"/>
+                <DataGridTextColumn Header="Status" Binding="{Binding Path=Status}" />
+                <DataGridTextColumn Header="Opis Urządzenia" Binding="{Binding Path=Description}" Width="2*"/>               
             </DataGrid.Columns>
         </DataGrid>
     </Grid>

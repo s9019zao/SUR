@@ -11,6 +11,9 @@ using System.Windows;
 using SUR_CSTG.Data;
 using SUR_CSTG.Views.PersonViews;
 using SUR_CSTG.Views.PartViews;
+using SUR_CSTG.ViewModels.AreaViewModels;
+using SUR_CSTG.Views.BreakdownViews;
+using SUR_CSTG.ViewModels.BreakdownViewModels;
 
 namespace SUR_CSTG.ViewModels
 {
@@ -28,6 +31,7 @@ namespace SUR_CSTG.ViewModels
         ICommand _showDevice;
         ICommand _showPerson;
         ICommand _showPart;
+        ICommand _showBreakdown;
         UserControl _selectedView;
 
         #endregion
@@ -125,6 +129,8 @@ namespace SUR_CSTG.ViewModels
         private void OpenAreaView(object obj)
         {
             var view = new AreaView();
+            AreaViewModel vm = new AreaViewModel(this);
+            view.DataContext = vm;
             SelectedView = view;            
         }
 
@@ -158,6 +164,19 @@ namespace SUR_CSTG.ViewModels
         private void OpenPartView(object obj)
         {
             var view = new PartView();
+            SelectedView = view;
+        }
+
+        public ICommand OpenBreakdownViewCommand
+        {
+            get { return _showBreakdown ?? (_showBreakdown = new RelayCommand(OpenBreakdownView)); }
+        }
+
+        private void OpenBreakdownView(object obj)
+        {
+            var view = new BreakdownView();
+            BreakdownViewModel vm = new BreakdownViewModel(this);
+            view.DataContext = vm;
             SelectedView = view;
         }
 

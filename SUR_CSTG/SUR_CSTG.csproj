@@ -83,6 +83,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Assistant\PasswordBoxAssistant.cs" />
+    <Compile Include="Assistant\RichTextboxAssistant.cs" />
     <Compile Include="Data\Area.cs" />
     <Compile Include="Data\Breakdown.cs" />
     <Compile Include="Data\Device.cs" />
@@ -102,6 +103,10 @@
     <Compile Include="ViewModels\AreaViewModels\AreaViewModel.cs" />
     <Compile Include="ViewModels\AreaViewModels\DeleteAreaWindowViewModel.cs" />
     <Compile Include="ViewModels\AreaViewModels\EditAreaWindowViewModel.cs" />
+    <Compile Include="ViewModels\BreakdownViewModels\AddBreakdownWindowViewModel.cs" />
+    <Compile Include="ViewModels\BreakdownViewModels\BreakdownListViewModel.cs" />
+    <Compile Include="ViewModels\BreakdownViewModels\BreakdownViewModel.cs" />
+    <Compile Include="ViewModels\BreakdownViewModels\EditBreakdownWindowViewModel.cs" />
     <Compile Include="ViewModels\DeviceViewModels\AddDeviceWindowViewModel.cs" />
     <Compile Include="ViewModels\DeviceViewModels\DeleteDeviceWindowViewModel.cs" />
     <Compile Include="ViewModels\DeviceViewModels\DeviceListViewModel.cs" />
@@ -143,6 +148,18 @@
     </Compile>
     <Compile Include="Views\BreakdownViews\AddBreakdownView.xaml.cs">
       <DependentUpon>AddBreakdownView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BreakdownViews\AddBreakdownWindowView.xaml.cs">
+      <DependentUpon>AddBreakdownWindowView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BreakdownViews\BreakdownListView.xaml.cs">
+      <DependentUpon>BreakdownListView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BreakdownViews\BreakdownView.xaml.cs">
+      <DependentUpon>BreakdownView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BreakdownViews\EditBreakdownWindowView.xaml.cs">
+      <DependentUpon>EditBreakdownWindowView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\DeviceViews\AddDeviceWindowView.xaml.cs">
       <DependentUpon>AddDeviceWindowView.xaml</DependentUpon>
@@ -238,6 +255,22 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\BreakdownViews\AddBreakdownView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\BreakdownViews\AddBreakdownWindowView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\BreakdownViews\BreakdownListView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\BreakdownViews\BreakdownView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\BreakdownViews\EditBreakdownWindowView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

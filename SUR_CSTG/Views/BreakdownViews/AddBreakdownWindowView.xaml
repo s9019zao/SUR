@@ -1,0 +1,118 @@
+﻿<Window x:Class="SUR_CSTG.Views.BreakdownViews.AddBreakdownWindowView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:richtext="clr-namespace:SUR_CSTG.Assistant"
+        Title="Dodaj Awarie" WindowStartupLocation="CenterScreen"
+        Height="500" Width="600">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="0.4*"/>
+            <ColumnDefinition Width="0.4*"/>
+            <ColumnDefinition Width="0.4*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Row="0" Grid.ColumnSpan="5"/>
+        <TextBlock Grid.Row="1" Grid.Column="0" 
+                   Text="Imię zgłaszającego: " HorizontalAlignment="Right" FontSize="14" >
+        </TextBlock>
+        <TextBox Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" FontSize="14" IsReadOnly="True"
+                 Text="{Binding Path=Name, UpdateSourceTrigger=PropertyChanged, NotifyOnValidationError=True, Mode=TwoWay}" >
+        </TextBox>
+        <TextBlock Grid.Row="2" Grid.ColumnSpan="5"/>
+        <TextBlock Grid.Row="3" Grid.Column="0" 
+                   Text="Nazwisko Zgłaszającego: " HorizontalAlignment="Right" FontSize="14">
+        </TextBlock>
+        <TextBox Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="3" FontSize="14" IsReadOnly="True"
+                 Text="{Binding Path=Surname, UpdateSourceTrigger=PropertyChanged, NotifyOnValidationError=True, Mode=TwoWay}" >
+        </TextBox>
+        <TextBlock Grid.Row="4" Grid.ColumnSpan="5"/>
+        <TextBlock Grid.Row="5" Grid.Column="0" 
+                   Text="Rejon: " HorizontalAlignment="Right" FontSize="14">
+        </TextBlock>
+        <ComboBox Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="3" FontSize="14"
+                  ItemsSource="{Binding Path=AllAreas,  UpdateSourceTrigger=PropertyChanged, NotifyOnValidationError=True, Mode=TwoWay}"
+                  DisplayMemberPath="Name"
+                  SelectedItem="{Binding Path=SelectedArea}">
+        </ComboBox>
+        <TextBlock Grid.Row="6" Grid.ColumnSpan="5"/>
+        <TextBlock Grid.Row="7" Grid.Column="0"
+                   Text="Urządzenie: " HorizontalAlignment="Right" FontSize="14">
+        </TextBlock>
+        <ComboBox Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="3" FontSize="14"
+                  ItemsSource="{Binding Path=DevicesArea,  UpdateSourceTrigger=PropertyChanged, NotifyOnValidationError=True, Mode=TwoWay}"
+                  DisplayMemberPath="Name"
+                  SelectedItem="{Binding Path=SelectedDevice}">
+        </ComboBox>
+
+        <TextBlock Grid.Row="8" Grid.ColumnSpan="5"/>
+        <TextBlock Grid.Row="9" Grid.Column="0"
+                   Text="Rodzaj: " HorizontalAlignment="Right" FontSize="14">
+        </TextBlock>
+        <ComboBox Grid.Row="9" Grid.Column="1" Grid.ColumnSpan="3" FontSize="14"
+                  ItemsSource="{Binding Path=TypeBreakdown,  UpdateSourceTrigger=PropertyChanged, NotifyOnValidationError=True, Mode=TwoWay}"
+                  SelectedItem="{Binding Path=SelectedBreakedownType}">
+        </ComboBox>
+
+        <TextBlock Grid.Row="10" Grid.ColumnSpan="5"/>
+        <TextBlock Grid.Row="11" Grid.Column="0" 
+                   Text="Data: " HorizontalAlignment="Right" FontSize="14">
+        </TextBlock>
+        <TextBox Grid.Row="11" Grid.Column="1" Grid.ColumnSpan="3" FontSize="14">
+            <TextBox.Text>
+                <Binding Path="RequestDate" StringFormat='dd-MM.yyyy' UpdateSourceTrigger="PropertyChanged" ValidatesOnDataErrors="True"/>
+            </TextBox.Text>
+        </TextBox>
+        <TextBlock Grid.Row="12" Grid.ColumnSpan="5"/>
+        <TextBlock Grid.Row="13" Grid.Column="0" 
+                   Text="Godzina: " HorizontalAlignment="Right" FontSize="14">
+        </TextBlock>
+        <TextBox Grid.Row="13" Grid.Column="1" Grid.ColumnSpan="3" FontSize="14">
+            <TextBox.Text>
+                <Binding Path="RequestDate" StringFormat='HH:mm' UpdateSourceTrigger="PropertyChanged" ValidatesOnDataErrors="True"/>
+            </TextBox.Text>
+                 
+        </TextBox>
+        <TextBlock Grid.Row="14" Grid.ColumnSpan="5"/>
+        <TextBlock Grid.Row="15" Grid.Column="0" 
+                   Text="Opis: " HorizontalAlignment="Right" FontSize="14">
+        </TextBlock>
+        <RichTextBox Grid.Row="15" Grid.Column="1" Grid.ColumnSpan="3" FontSize="14"
+                     richtext:RichTextboxAssistant.BoundDocument="{Binding Path=Description, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+        </RichTextBox>
+        <TextBlock Grid.Row="16" Grid.ColumnSpan="5"/>
+        <StackPanel Grid.Row="17" Grid.ColumnSpan="5">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button Content="Dodaj" Grid.Column="1" FontSize="14" Command="{Binding Path=AddBreakdownCommand}" />
+                <Button Content="Anuluj" FontSize="14" Grid.Column="3" Command="{Binding Path=CloseCommand}"/>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Window>

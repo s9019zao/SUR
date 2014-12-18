@@ -41,6 +41,18 @@ namespace SUR_CSTG.Data
                 Name = "Rejon5",
                 Description = "Jakiś5"
             };
+
+            Area area6 = new Area
+            {
+                Name = "Nieaktywny",
+                Description = "W tym rejonie znajdują się urządzenia o statusie Nieaktywne"
+            };
+
+            Area area7 = new Area
+            {
+                Name = "Złomowiec",
+                Description = "W tym rejonie znajdują się urządzenia o statusie Usunięte"
+            };
             #endregion
 
            #region Person
@@ -95,55 +107,64 @@ namespace SUR_CSTG.Data
            Device device1 = new Device
            {
                Name = "Urządzenie1",
-               Description = "Jakiś1"
+               Description = "Jakiś1",
+               Status = DeviceStatus.Aktywne
            };
 
            Device device2 = new Device
            {
                Name = "Urządzenie2",
-               Description = "Jakiś2"
+               Description = "Jakiś2",
+               Status = DeviceStatus.Aktywne
            };
 
            Device device3 = new Device
            {
                Name = "Urządzenie3",
-               Description = "Jakiś3"
+               Description = "Jakiś3",
+               Status = DeviceStatus.Aktywne
            };
 
            Device device4 = new Device
            {
                Name = "Urządzenie4",
-               Description = "Jakiś4"
+               Description = "Jakiś4",
+               Status = DeviceStatus.Aktywne
            };
 
            Device device5 = new Device
            {
                Name = "Urządzenie5",
-               Description = "Jakiś5"
+               Description = "Jakiś5",
+               Status = DeviceStatus.Aktywne
            };
 
            Device device6 = new Device
            {
                Name = "Urządzenie6",
-               Description = "Jakiś6"
+               Description = "Jakiś6",
+               Status = DeviceStatus.Aktywne
            };
 
            Device device7 = new Device
            {
                Name = "Urządzenie7",
-               Description = "Jakiś7"
+               Description = "Jakiś7",
+               Status = DeviceStatus.Aktywne
            };
 
            Device device8 = new Device
            {
                Name = "Urządzenie8",
-               Description = "Jakiś8"
+               Description = "Jakiś8",
+               Status = DeviceStatus.Aktywne
            };
 
            Device device9 = new Device
            {
                Name = "Urządzenie9",
-               Description = "Jakiś9"
+               Description = "Jakiś9",
+               Status = DeviceStatus.Aktywne
            };
 
            #endregion
@@ -175,6 +196,44 @@ namespace SUR_CSTG.Data
 
            #endregion
 
+           #region Part
+           Breakdown breakdown1 = new Breakdown
+           {
+               RequestDate = DateTime.Now,
+               OverhaulDate = DateTime.Now,
+               Status = StatusBreakdown.Zgłoszona,
+               Type = BreakedownType.Automatczna,
+               RequestDescription = "dgsdgsdg",
+               ReportingPerson = person1,
+               Device = device1
+           };
+
+           Breakdown breakdown2 = new Breakdown
+           {
+               RequestDate = new DateTime(2014, 1, 18, 18, 16, 50),
+               OverhaulDate = DateTime.Now,
+               Status = StatusBreakdown.Zgłoszona,
+               Type = BreakedownType.Elektryczna,
+               ReportingPerson = person4,
+               Device = device2
+           };
+
+           Breakdown breakdown3 = new Breakdown
+           {
+               RequestDate = new DateTime(2014, 6, 21, 14, 36, 50),
+               OverhaulDate = DateTime.Now,
+               Status = StatusBreakdown.Zgłoszona,
+               Type = BreakedownType.Mechaniczna,
+               ReportingPerson = person5,
+               Device = device3
+           };
+
+           #endregion
+
+           ctx.Breakdowns.Add(breakdown1);
+           ctx.Breakdowns.Add(breakdown2);
+           ctx.Breakdowns.Add(breakdown3);
+
            ctx.Devices.Add(device1);
            ctx.Devices.Add(device2);
            ctx.Devices.Add(device3);
@@ -199,7 +258,9 @@ namespace SUR_CSTG.Data
            ctx.Areas.Add(area3);
            ctx.Areas.Add(area4);
            ctx.Areas.Add(area5);
-           
+           ctx.Areas.Add(area6);
+           ctx.Areas.Add(area7);
+
            ctx.Persons.Add(person1);
            ctx.Persons.Add(person2);
            ctx.Persons.Add(person3);

@@ -15,10 +15,12 @@ namespace SUR_CSTG.ViewModels.DeviceViewModels
         #region Fields
 
         SUR_DbContext _ctx = new SUR_DbContext();
+        IEnumerable<DeviceStatus> _deviceStatus;
         ICommand _addDeviceCommand;
         ICommand _closeWinndow;
         string _name;
         string _description;
+        DeviceStatus  _selectedDeviceStatus;
         Area _selectArea;
 
         #endregion
@@ -55,6 +57,28 @@ namespace SUR_CSTG.ViewModels.DeviceViewModels
             }
         }
 
+        public DeviceStatus SelectedDeviceStatus
+        {
+            get { return _selectedDeviceStatus; }
+            set
+            {
+                _selectedDeviceStatus = value;
+                OnPropertyChanged("SelectedValue");
+            }
+        }
+
+        public IEnumerable<DeviceStatus> DeviceStatus
+        {
+            get { return Enum.GetValues(typeof(DeviceStatus)).Cast<DeviceStatus>(); }
+
+            set
+            {
+                _deviceStatus = value;
+                OnPropertyChanged("DeviceStatus");
+            }
+        }
+
+
         public Area SelectArea
         {
             get { return _selectArea; }
@@ -81,9 +105,9 @@ namespace SUR_CSTG.ViewModels.DeviceViewModels
 
         private void Add(object obj)
         {
-            string message = "Dodano urządzernie\n";
+            string message = "Dodano urządzenie\n";
             string titel = "Informacja o dodaniu urządzenia";
-            _ctx.Devices.Add(new Device { Name = Name, Description = Description, Area = SelectArea });
+            _ctx.Devices.Add(new Device { Name = Name, Description = Description, Area = SelectArea, Status = SelectedDeviceStatus });
             _ctx.SaveChanges();
             var result = MessageBox.Show(message + "O nazwie: " + Name, titel);
             Close(obj);

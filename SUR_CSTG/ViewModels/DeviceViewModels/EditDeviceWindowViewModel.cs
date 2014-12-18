@@ -14,9 +14,12 @@ namespace SUR_CSTG.ViewModels.DeviceViewModels
         #region Fields
 
         DeviceViewModel _deviceViewModel;
+        IEnumerable<DeviceStatus> _deviceStatus;
         Device _deviceToEdit;
         Area _selectedArea;
         Area _areaToEdit;
+        DeviceStatus _selectedDeviceStatus;
+        DeviceStatus _deviceStatusToEdit;
         SUR_DbContext _ctx = new SUR_DbContext();
         ICommand _closeWinndow;
         ICommand _edit;
@@ -80,6 +83,37 @@ namespace SUR_CSTG.ViewModels.DeviceViewModels
             }
         }
 
+        public IEnumerable<DeviceStatus> DeviceStatus
+        {
+            get { return Enum.GetValues(typeof(DeviceStatus)).Cast<DeviceStatus>(); }
+
+            set
+            {
+                _deviceStatus = value;
+                OnPropertyChanged("DeviceStatus");
+            }
+        }
+
+        public DeviceStatus SelectedDeviceStatus
+        {
+            get { return _selectedDeviceStatus; }
+            set
+            {
+                _selectedDeviceStatus = value;
+                OnPropertyChanged("SelectedValue");
+            }
+        }
+
+        public DeviceStatus DeviceStatusToEdit
+        {
+            get { return _deviceStatusToEdit; }
+            set
+            {
+                _deviceStatusToEdit = value;
+                OnPropertyChanged("SelectedValue");
+            }
+        }
+
         public DeviceViewModel DeviceViewModel
         {
             get { return _deviceViewModel; }
@@ -100,6 +134,7 @@ namespace SUR_CSTG.ViewModels.DeviceViewModels
                 Name = value.Name;
                 Description = value.Description;
                 AreaToEdit = value.Area;
+                DeviceStatusToEdit = value.Status;
                 OnPropertyChanged("");
             }
         }
@@ -123,6 +158,7 @@ namespace SUR_CSTG.ViewModels.DeviceViewModels
             DeviceToEdit.Name = Name;
             DeviceToEdit.Description = Description;
             DeviceToEdit.Area = AreaToEdit;
+            DeviceToEdit.Status = DeviceStatusToEdit;
             _ctx.SaveChanges();
             Close(obj);
         }

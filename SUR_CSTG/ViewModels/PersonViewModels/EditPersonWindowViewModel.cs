@@ -30,9 +30,9 @@ namespace SUR_CSTG.ViewModels.PersonViewModels
 
         #region Constructors
 
-        public EditPersonWindowViewModel(PersonViewModel areaViewModel)
+        public EditPersonWindowViewModel(PersonViewModel personViewModel)
         {
-            _personViewModel = areaViewModel;
+            _personViewModel = personViewModel;
         }
 
         #endregion

@@ -30,13 +30,13 @@
         <Button Grid.Row="0" Grid.Column="7" Content="Wyloguj" Command="{Binding Path=LogoutCommand}"></Button>
         <TextBlock Grid.Row="1" Grid.ColumnSpan="8" Text="SUR_CSTG" FontSize="35" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Button Grid.Row="2" Grid.Column="0" Content="Pracownicy" Command="{Binding Path=OpenPersonViewCommand}"/>
-        <Button Grid.Row="2" Grid.Column="1" Content="Awarie"></Button>
+        <Button Grid.Row="2" Grid.Column="1" Content="Awarie" Command="{Binding Path=OpenBreakdownViewCommand}"/>
         <Button Grid.Row="2" Grid.Column="2" Content="Przeeglądy"></Button>
-        <Button Grid.Row="2" Grid.Column="3" Content="Urządzenia" Command="{Binding Path=OpenDeviceViewCommand}"></Button>
-        <Button Grid.Row="2" Grid.Column="4" Content="Rejony" Command="{Binding Path=OpenAreaViewCommand}"></Button>
-        <Button Grid.Row="2" Grid.Column="5" Content="xxxxxx"></Button>
+        <Button Grid.Row="2" Grid.Column="3" Content="Urządzenia" Command="{Binding Path=OpenDeviceViewCommand}"/>
+        <Button Grid.Row="2" Grid.Column="4" Content="Rejony" Command="{Binding Path=OpenAreaViewCommand}"/>
+        <Button Grid.Row="2" Grid.Column="5" Content="yyyyyy"></Button>
         <Button Grid.Row="2" Grid.Column="6" Content="yyyyyy"></Button>
-        <Button Grid.Row="2" Grid.Column="7" Content="Części" Command="{Binding Path=OpenPartViewCommand}"></Button>
+        <Button Grid.Row="2" Grid.Column="7" Content="Części" Command="{Binding Path=OpenPartViewCommand}"/>
         <Border Grid.Row="3" Grid.ColumnSpan="8">
             <ContentControl Content="{Binding SelectedView}"/>
         </Border>

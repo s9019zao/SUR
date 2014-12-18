@@ -13,6 +13,11 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -39,6 +44,11 @@
         <TextBlock Grid.Row="5" Grid.Column="0" 
                    Text="Rejon: " HorizontalAlignment="Right" FontSize="14">
         </TextBlock>
+        <TextBlock Grid.Row="6" Grid.ColumnSpan="5"/>
+        <TextBlock Grid.Row="7" Grid.Column="0" 
+                   Text="Status: " HorizontalAlignment="Right" FontSize="14">
+        </TextBlock>
+        
         <ComboBox Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="3" FontSize="14" 
                   ToolTip="Wybierz rejon"
                   ItemsSource="{Binding AllAreas, UpdateSourceTrigger=PropertyChanged, NotifyOnValidationError=True, Mode=TwoWay}"
@@ -46,8 +56,16 @@
                   SelectedItem="{Binding Path=SelectArea}"
                   SelectedValue="{Binding Path=AreaToEdit}">
         </ComboBox>
-        <TextBlock Grid.Row="6" Grid.ColumnSpan="5"/>
-        <StackPanel Grid.Row="7" Grid.ColumnSpan="5">
+        <ComboBox Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="3" FontSize="14" 
+                  ToolTip="Wybierz status"
+                  ItemsSource="{Binding DeviceStatus, UpdateSourceTrigger=PropertyChanged, NotifyOnValidationError=True, Mode=TwoWay}"
+                  SelectedItem="{Binding Path=SelectedDeviceStatus}"
+                  SelectedValue="{Binding Path=DeviceStatusToEdit}">
+        </ComboBox>
+
+        <TextBlock Grid.Row="9" Grid.ColumnSpan="5"/>
+        <StackPanel Grid.Row="10
+                    " Grid.ColumnSpan="5">
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition/>

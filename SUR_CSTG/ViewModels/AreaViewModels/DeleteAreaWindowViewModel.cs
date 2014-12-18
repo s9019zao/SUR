@@ -62,12 +62,21 @@ namespace SUR_CSTG.ViewModels.AreaViewModels
         }
 
         public void Delete(object obj)
-        {           
-            _areaViewModel.AreaListViewModel.Areas.Remove(AreaToDelete);
-            _areaViewModel.Ctx.Areas.Remove(AreaToDelete);
-            _areaViewModel.Ctx.SaveChanges();
-            OnPropertyChanged("");
-            Close(obj);
+        {
+            if (AreaToDelete.Devices.LongCount() == 0)
+            {
+                _areaViewModel.AreaListViewModel.Areas.Remove(AreaToDelete);
+                _areaViewModel.Ctx.Areas.Remove(AreaToDelete);
+                _areaViewModel.Ctx.SaveChanges();
+                OnPropertyChanged("");
+                Close(obj);
+            }
+            else
+            {
+                string mess = "W rejonie znajdują się urządzenia";
+                var message = MessageBox.Show(mess);
+            }
+
         }
 
         public ICommand CloseCommand

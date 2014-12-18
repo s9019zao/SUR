@@ -24,7 +24,6 @@ namespace SUR_CSTG.Views.AreaViews
         public AreaView()
         {
             InitializeComponent();
-            DataContext = new AreaViewModel();
         }
     }
 }

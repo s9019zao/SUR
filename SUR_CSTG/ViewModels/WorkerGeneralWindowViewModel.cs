@@ -102,6 +102,7 @@ namespace SUR_CSTG.ViewModels
         {
             get { return _closeWinndow ?? (_closeWinndow = new RelayCommand(Close)); }
         }
+
         public void Close(object obj)
         {
             foreach (System.Windows.Window window in System.Windows.Application.Current.Windows)

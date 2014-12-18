@@ -13,6 +13,9 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -46,7 +49,16 @@
                   SelectedItem="{Binding SelectArea}">
         </ComboBox>
         <TextBlock Grid.Row="6" Grid.ColumnSpan="5"/>
-        <StackPanel Grid.Row="7" Grid.ColumnSpan="5">
+        <TextBlock Grid.Row="7" Grid.Column="0" 
+                   Text="Status: " HorizontalAlignment="Right" FontSize="14">
+        </TextBlock>
+        <ComboBox Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="3" FontSize="14" 
+                  ToolTip="Wybierz status"
+                  ItemsSource="{Binding DeviceStatus, Mode=OneWay}"
+                  SelectedItem="{Binding SelectedDeviceStatus}">
+        </ComboBox>
+        <TextBlock Grid.Row="8" Grid.ColumnSpan="5"/>
+        <StackPanel Grid.Row="9" Grid.ColumnSpan="5">
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition/>
