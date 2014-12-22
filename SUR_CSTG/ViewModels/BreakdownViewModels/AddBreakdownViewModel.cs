@@ -7,14 +7,15 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
 using SUR_CSTG.Data;
+using SUR_CSTG.Views.BreakdownViews;
 
 namespace SUR_CSTG.ViewModels.BreakdownViewModels
 {
-    public class AddBreakdownWindowViewModel : ViewModel
+    public class AddBreakdownViewModel : ViewModel
     {
         #region Fields
 
-        BreakdownViewModel _breakedownViewModel;
+        WorkerGeneralWindowViewModel _workerGeneralWindowViewModel;
         SUR_DbContext _ctx = new SUR_DbContext();
         public ObservableCollection<Area> Areas { get; set; }
         public ObservableCollection<Device> Devices { get; set; }
@@ -29,15 +30,15 @@ namespace SUR_CSTG.ViewModels.BreakdownViewModels
         string _surname;
         string _description;
         ICommand _addBreakdownCommand;
-        ICommand _closeWinndow;     
+        ICommand _closeWinndow;
 
         #endregion
 
         #region Constructors
 
-        public AddBreakdownWindowViewModel(BreakdownViewModel breakdownViewModel)
+        public AddBreakdownViewModel(WorkerGeneralWindowViewModel workerGeneralWindowViewModel)
         {
-            _breakedownViewModel = breakdownViewModel;
+            _workerGeneralWindowViewModel = workerGeneralWindowViewModel;
             Areas = new ObservableCollection<Area>(_ctx.Areas);
             Devices = new ObservableCollection<Device>(_ctx.Devices);
             Persons = new ObservableCollection<Person>(_ctx.Persons);
@@ -51,6 +52,37 @@ namespace SUR_CSTG.ViewModels.BreakdownViewModels
 
         public ObservableCollection<Area> AllAreas { get; set; }
         public ObservableCollection<Device> DevicesArea { get; set; }
+
+        public Area SelectedArea
+        {
+            get { return _selectedArea; }
+            set
+            {
+                _selectedArea = value;
+                GetDevicesArea();
+                OnPropertyChanged("");
+            }
+        }
+
+        public DateTime RequestDate
+        {
+            get { return _requestDate; }
+            set
+            {
+                _requestDate = value;
+                OnPropertyChanged("");
+            }
+        }
+
+        public Device SelectedDevice
+        {
+            get { return _selctedDevice; }
+            set
+            {
+                _selctedDevice = value;
+                OnPropertyChanged("");
+            }
+        }
 
         public BreakedownType SelectedBreakedownType
         {
@@ -99,7 +131,7 @@ namespace SUR_CSTG.ViewModels.BreakdownViewModels
             set
             {
                 _description = value;
-                OnPropertyChanged("Description");
+                OnPropertyChanged("Surname");
             }
         }
 
@@ -111,37 +143,6 @@ namespace SUR_CSTG.ViewModels.BreakdownViewModels
                 _personToAdd = value;
                 Name = value.Name;
                 Surname = value.Surname;
-                OnPropertyChanged("");
-            }
-        }
-
-        public Area SelectedArea
-        {
-            get { return _selectedArea; }
-            set
-            {
-                _selectedArea = value;
-                GetDevicesArea();
-                OnPropertyChanged("");
-            }
-        }
-
-        public Device SelectedDevice
-        {
-            get { return _selctedDevice; }
-            set
-            {
-                _selctedDevice = value;
-                OnPropertyChanged("");
-            }
-        }
-
-        public DateTime RequestDate
-        {
-            get { return _requestDate; }
-            set
-            {
-                _requestDate = value;
                 OnPropertyChanged("");
             }
         }
@@ -167,21 +168,23 @@ namespace SUR_CSTG.ViewModels.BreakdownViewModels
 
         private void Add(object obj)
         {
-            string message = "Dodano rejon\n";
-            string titel = "Informacja o dodaniu rejonu";
-            _ctx.Breakdowns.Add(new Breakdown
-            {
-                Device = SelectedDevice,
-                Type = SelectedBreakedownType,
-                RequestDate = RequestDate,
-                ReportingPerson = PersonToAdd,
-                RequestDescription = Description,
-                Status = StatusBreakdown.Zgłoszona,
-                OverhaulDate = DateTime.Now
-            });
+            string message = "Dodano awarię\n";
+            string titel = "Informacja o dodaniu awarii";
+            _ctx.Breakdowns.Add(new Breakdown {Device = SelectedDevice, 
+                                               Type = SelectedBreakedownType, 
+                                               RequestDate = RequestDate,
+                                               ReportingPerson = PersonToAdd,
+                                               RequestDescription = Description,
+                                               Status = StatusBreakdown.Zgłoszona,
+                                               OverhaulDate = DateTime.Now
+                                               });
             _ctx.SaveChanges();
-            var result = MessageBox.Show(message + "O nazwie: ", titel);
-            Close(obj);
+            var result = MessageBox.Show(message, titel);
+            var view = new AddBreakdownView();
+            AddBreakdownViewModel vm = new AddBreakdownViewModel(this._workerGeneralWindowViewModel);
+            vm.PersonToAdd = _workerGeneralWindowViewModel.Person;
+            view.DataContext = vm;
+            _workerGeneralWindowViewModel.SelectedView = view;
         }
 
         private bool CanAdd(object obj)
@@ -198,15 +201,14 @@ namespace SUR_CSTG.ViewModels.BreakdownViewModels
         }
         public void Close(object obj)
         {
-            foreach (System.Windows.Window window in System.Windows.Application.Current.Windows)
-            {
-                if (window.DataContext == this)
-                {
-                    window.Close();
-                }
-            }
+            var view = new AddBreakdownView();
+            AddBreakdownViewModel vm = new AddBreakdownViewModel(this._workerGeneralWindowViewModel);
+            vm.PersonToAdd = _workerGeneralWindowViewModel.Person;
+            view.DataContext = vm;
+            _workerGeneralWindowViewModel.SelectedView = view;
         }
 
         #endregion
+
     }
 }

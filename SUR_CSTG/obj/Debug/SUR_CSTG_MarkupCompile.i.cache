@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 F:\Studia\Dyplom\!FINAL\REPO\SUR_CSTG\SUR_CSTG\App.xaml
-31-233115272
+33-152593581
 1-249064015
-812144965897
+87-10176206
 17-1736002388
-MainWindow.xaml;Views\AreaViews\AddAreaWindowView.xaml;Views\AreaViews\AreaListView.xaml;Views\AreaViews\AreaSerchListView.xaml;Views\AreaViews\AreaView.xaml;Views\AreaViews\DeleteAreaWindowView.xaml;Views\AreaViews\EditAreaWindowView.xaml;Views\BreakdownViews\AddBreakdownView.xaml;Views\BreakdownViews\AddBreakdownWindowView.xaml;Views\BreakdownViews\BreakdownListView.xaml;Views\BreakdownViews\BreakdownView.xaml;Views\BreakdownViews\EditBreakdownWindowView.xaml;Views\DeviceViews\AddDeviceWindowView.xaml;Views\DeviceViews\DeleteDeviceWindowView.xaml;Views\DeviceViews\DeviceListView.xaml;Views\DeviceViews\DeviceView.xaml;Views\DeviceViews\EditDeviceWindowView.xaml;Views\GeneralWindowView.xaml;Views\PartViews\AddPartWindowView.xaml;Views\PartViews\DeletePartWindowView.xaml;Views\PartViews\EditPartWindowView.xaml;Views\PartViews\EditQuantityPartWindowView.xaml;Views\PartViews\PartListView.xaml;Views\PartViews\PartView.xaml;Views\PersonViews\AddPersonWindowView.xaml;Views\PersonViews\ChangePasswordView.xaml;Views\PersonViews\DeletePersonWindowView.xaml;Views\PersonViews\EditPersonWindowView.xaml;Views\PersonViews\PersonListView.xaml;Views\PersonViews\PersonView.xaml;Views\WorkerGeneralWindowView.xaml;
+MainWindow.xaml;Views\AreaViews\AddAreaWindowView.xaml;Views\AreaViews\AreaListView.xaml;Views\AreaViews\AreaSerchListView.xaml;Views\AreaViews\AreaView.xaml;Views\AreaViews\DeleteAreaWindowView.xaml;Views\AreaViews\EditAreaWindowView.xaml;Views\BreakdownViews\AddBreakdownView.xaml;Views\BreakdownViews\AddBreakdownWindowView.xaml;Views\BreakdownViews\BreakdownListView.xaml;Views\BreakdownViews\BreakdownView.xaml;Views\BreakdownViews\ChangeStatusBreakdownView.xaml;Views\BreakdownViews\EditBreakdownWindowView.xaml;Views\DeviceViews\AddDeviceWindowView.xaml;Views\DeviceViews\DeleteDeviceWindowView.xaml;Views\DeviceViews\DeviceListView.xaml;Views\DeviceViews\DeviceView.xaml;Views\DeviceViews\EditDeviceWindowView.xaml;Views\GeneralWindowView.xaml;Views\PartViews\AddPartWindowView.xaml;Views\PartViews\DeletePartWindowView.xaml;Views\PartViews\EditPartWindowView.xaml;Views\PartViews\EditQuantityPartWindowView.xaml;Views\PartViews\PartListView.xaml;Views\PartViews\PartView.xaml;Views\PersonViews\AddPersonWindowView.xaml;Views\PersonViews\ChangePasswordView.xaml;Views\PersonViews\ChangePasswordWindowView.xaml;Views\PersonViews\DeletePersonWindowView.xaml;Views\PersonViews\EditPersonWindowView.xaml;Views\PersonViews\PersonListView.xaml;Views\PersonViews\PersonView.xaml;Views\WorkerGeneralWindowView.xaml;
 
 False
 

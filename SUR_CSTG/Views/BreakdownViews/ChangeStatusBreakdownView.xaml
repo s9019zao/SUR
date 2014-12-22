@@ -1,0 +1,47 @@
+﻿<UserControl x:Class="SUR_CSTG.Views.BreakdownViews.ChangeStatusBreakdownView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <StackPanel>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.3*"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Row="0" FontSize="14" />
+                <CheckBox Grid.Row="1" Grid.Column="1" Content=" Oczekująca"                    
+                          IsChecked="{Binding IsChecked1, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                <TextBlock Grid.Row="2" FontSize="14" />
+                <CheckBox Grid.Row="3" Grid.Column="1" Content=" Usuwana"
+                          IsChecked="{Binding IsChecked2, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                <TextBlock Grid.Row="4" FontSize="14" />
+                <StackPanel Grid.Row="5" Grid.ColumnSpan="2">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="1" Content="Zmień" Command="{Binding Path=ChangeStatusBreakdownCommand}"></Button>
+                        <Button Grid.Column="3" Content="Anuluj" Command="{Binding Path=CloseChangeStatusBreakdownCommand}"></Button>
+                    </Grid>
+                </StackPanel>
+                
+            </Grid>
+        </StackPanel>     
+    </Grid>
+</UserControl>

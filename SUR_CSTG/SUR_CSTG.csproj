@@ -103,9 +103,11 @@
     <Compile Include="ViewModels\AreaViewModels\AreaViewModel.cs" />
     <Compile Include="ViewModels\AreaViewModels\DeleteAreaWindowViewModel.cs" />
     <Compile Include="ViewModels\AreaViewModels\EditAreaWindowViewModel.cs" />
+    <Compile Include="ViewModels\BreakdownViewModels\AddBreakdownViewModel.cs" />
     <Compile Include="ViewModels\BreakdownViewModels\AddBreakdownWindowViewModel.cs" />
     <Compile Include="ViewModels\BreakdownViewModels\BreakdownListViewModel.cs" />
     <Compile Include="ViewModels\BreakdownViewModels\BreakdownViewModel.cs" />
+    <Compile Include="ViewModels\BreakdownViewModels\ChangeStatusBreakdownViewModel.cs" />
     <Compile Include="ViewModels\BreakdownViewModels\EditBreakdownWindowViewModel.cs" />
     <Compile Include="ViewModels\DeviceViewModels\AddDeviceWindowViewModel.cs" />
     <Compile Include="ViewModels\DeviceViewModels\DeleteDeviceWindowViewModel.cs" />
@@ -121,6 +123,8 @@
     <Compile Include="ViewModels\PartViewModels\PartListViewModel.cs" />
     <Compile Include="ViewModels\PartViewModels\PartViewModel.cs" />
     <Compile Include="ViewModels\PersonViewModels\AddPersonWindowViewModel.cs" />
+    <Compile Include="ViewModels\PersonViewModels\ChangePasswordViewModel.cs" />
+    <Compile Include="ViewModels\PersonViewModels\ChangePasswordWindowViewModel.cs" />
     <Compile Include="ViewModels\PersonViewModels\DeletePersonWindowViewModel.cs" />
     <Compile Include="ViewModels\PersonViewModels\EditPersonWindowViewModel.cs" />
     <Compile Include="ViewModels\PersonViewModels\PersonListViewModel.cs" />
@@ -157,6 +161,9 @@
     </Compile>
     <Compile Include="Views\BreakdownViews\BreakdownView.xaml.cs">
       <DependentUpon>BreakdownView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\BreakdownViews\ChangeStatusBreakdownView.xaml.cs">
+      <DependentUpon>ChangeStatusBreakdownView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\BreakdownViews\EditBreakdownWindowView.xaml.cs">
       <DependentUpon>EditBreakdownWindowView.xaml</DependentUpon>
@@ -202,6 +209,9 @@
     </Compile>
     <Compile Include="Views\PersonViews\ChangePasswordView.xaml.cs">
       <DependentUpon>ChangePasswordView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PersonViews\ChangePasswordWindowView.xaml.cs">
+      <DependentUpon>ChangePasswordWindowView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\PersonViews\DeletePersonWindowView.xaml.cs">
       <DependentUpon>DeletePersonWindowView.xaml</DependentUpon>
@@ -270,6 +280,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\BreakdownViews\ChangeStatusBreakdownView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\BreakdownViews\EditBreakdownWindowView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -327,6 +341,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\PersonViews\ChangePasswordView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PersonViews\ChangePasswordWindowView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

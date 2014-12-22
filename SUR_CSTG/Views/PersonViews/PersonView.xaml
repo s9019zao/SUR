@@ -32,6 +32,8 @@
                     <RowDefinition Height="10"/>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="10"/>
+                    <RowDefinition Height="Auto"/>
+
                 </Grid.RowDefinitions>
                 <Button Content="Dodaj" Grid.Row="1" FontSize="14" 
                         Command="{Binding Path=OpenAddPersonCommand}">
@@ -42,6 +44,11 @@
                 <Button Content="Usuń" Grid.Row="5" FontSize="14"
                         Command="{Binding Path=OpenDeletePersonCommand}">
                 </Button>
+
+                <Button Content="Zmień swoje hasło" Grid.Row="7" FontSize="14"
+                        Command="{Binding Path=OpenChangePasswordWindowViewCommand}">
+                </Button>
+                
             </Grid>
         </StackPanel>
     </Grid>

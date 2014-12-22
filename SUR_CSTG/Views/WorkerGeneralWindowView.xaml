@@ -40,8 +40,22 @@
                 <Button Grid.Row="3" Content="Zmień Hasło" Command="{Binding Path=OpenChangePasswordViewCommand}"/>
             </Grid>
         </StackPanel>
-        <Border Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="7">
-            <ContentControl Content="{Binding SelectedView}"/>
-        </Border>
+        <StackPanel Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="7">
+            <Grid>
+                <Grid.ColumnDefinitions>
+
+                    <ColumnDefinition Width="0.7*"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="0.7*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Row="0" FontSize="50"/>
+                <ContentControl Grid.Column="1" Grid.Row="1" Content="{Binding SelectedView}"/>
+            </Grid>
+        </StackPanel>
     </Grid>
 </Window>

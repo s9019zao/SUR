@@ -13,14 +13,17 @@
                   SelectedItem="{Binding Path=SelectedBreakdown}">
         <DataGrid.Columns>
             <DataGridTextColumn Header="Id Awarii" Binding="{Binding Path=BreakdownId}" />
-            <DataGridTextColumn Header="Data zgłoszenia" Binding="{Binding Path=RequestDate, StringFormat='dd-MM.yyyy'}" />
+            <DataGridTextColumn Header="Data zgłoszenia" Binding="{Binding Path=RequestDate, StringFormat='dd.MM.yyyy'}" />
             <DataGridTextColumn Header="Godzina zgłoszenia" Binding="{Binding Path=RequestDate, StringFormat='HH:mm'}" />
             <DataGridTextColumn Header="Urządzenie" Binding="{Binding Path=Device.Name}" />
             <DataGridTextColumn Header="Imię" Binding="{Binding Path=ReportingPerson.Name}" />
             <DataGridTextColumn Header="Nazwisko" Binding="{Binding Path=ReportingPerson.Surname}" />
             <DataGridTextColumn Header="Rodzaj" Binding="{Binding Path=Type}" />
-            <DataGridTextColumn Header="Status" Binding="{Binding Path=Status}" Width="*"/>
-            <DataGridTextColumn Header="Opis" Binding="{Binding Path=RequestDescription}" Width="*"/>
+            <DataGridTextColumn Header="Status" Binding="{Binding Path=Status}"/>
+            <DataGridTextColumn Header="Opis ta dlasze chwilowo" Binding="{Binding Path=RequestDescription}"/>
+            <DataGridTextColumn Header="Data końca" Binding="{Binding Path=OverhaulDate, StringFormat='dd.MM.yyyy'}"/>
+            <DataGridTextColumn Header="Godzina końca" Binding="{Binding Path=OverhaulDate, StringFormat='HH:mm'}"/>
+            <DataGridTextColumn Header="Opis końca" Binding="{Binding Path=OverhaulDescription}"/>
         </DataGrid.Columns>
     </DataGrid>
 </UserControl>

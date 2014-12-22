@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
+using SUR_CSTG.ViewModels.PersonViewModels;
+
 
 namespace SUR_CSTG.ViewModels.PersonViewModels
 {
@@ -16,23 +18,84 @@ namespace SUR_CSTG.ViewModels.PersonViewModels
         #region Fields
 
         PersonListViewModel _personListViewModel;
+        GeneralWindowViewModel _generalWindowViewModel;
         SUR_DbContext _ctx = new SUR_DbContext();
+        Person _person;
+        string _nameSurname;
+        string _surname;
+        string _name;
+        Position _position;
         ICommand _openAddPerson;
         ICommand _openDeletePerson;
         ICommand _openEditPerson;
+        ICommand _showChangePassword;
 
         #endregion
 
         #region Constructors
-        public PersonViewModel()
+        public PersonViewModel(GeneralWindowViewModel generalWindowViewModel)
         {
+            _generalWindowViewModel = generalWindowViewModel;
             PersonListViewModel = new PersonListViewModel();
-           // AreaSerchListViewModel = new AreaSerchListViewModel();
         }
 
         #endregion
 
         #region Properities
+
+        public Person Person
+        {
+            get { return _person; }
+            set
+            {
+                _person = value;
+                Position = value.Position;
+                Name = value.Name;
+                Surname = value.Surname;
+                NameSurname = value.Name + " " + value.Surname;
+                OnPropertyChanged("");
+            }
+        }
+
+        public Position Position
+        {
+            get { return _position; }
+            set
+            {
+                _position = value;
+                OnPropertyChanged("");
+            }
+        }
+
+        public string NameSurname
+        {
+            get { return _nameSurname; }
+            set
+            {
+                _nameSurname = value;
+                OnPropertyChanged("");
+            }
+        }
+
+        public string Name
+        {
+            get { return _name; }
+            set
+            {
+                _name = value;
+                OnPropertyChanged("");
+            }
+        }
+
+        public string Surname
+        {
+            get { return _surname; }
+            set
+            {
+                _surname = value;
+                OnPropertyChanged("");
+            }
+        }
 
         public SUR_DbContext Ctx { get { return _ctx; } }
 
@@ -110,6 +173,20 @@ namespace SUR_CSTG.ViewModels.PersonViewModels
                 var message = MessageBox.Show(mess);
             }
         }
+
+        public ICommand OpenChangePasswordWindowViewCommand                                                                                         
+        {
+            get { return _showChangePassword ?? (_showChangePassword = new RelayCommand(OpenChangePasswordWindowView)); }
+        }
+
+        private void OpenChangePasswordWindowView(object obj)
+        {
+            var view = new ChangePasswordWindowView();
+            ChangePasswordWindowViewModel vm = new ChangePasswordWindowViewModel(_generalWindowViewModel);
+            view.DataContext = vm;
+            view.ShowDialog();
+        }
+
 
         #endregion
     }

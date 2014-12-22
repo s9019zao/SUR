@@ -1,5 +1,4 @@
-﻿using SUR_CSTG.ViewModels.PersonViewModels;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace SUR_CSTG.Views.PersonViews
+namespace SUR_CSTG.Views.BreakdownViews
 {
     /// <summary>
-    /// Interaction logic for PersonView.xaml
+    /// Interaction logic for ChangeStatusBreakdownView.xaml
     /// </summary>
-    public partial class PersonView : UserControl
+    public partial class ChangeStatusBreakdownView : UserControl
     {
-        public PersonView()
+        public ChangeStatusBreakdownView()
         {
             InitializeComponent();
         }

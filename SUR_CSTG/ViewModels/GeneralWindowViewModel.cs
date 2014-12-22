@@ -14,6 +14,7 @@ using SUR_CSTG.Views.PartViews;
 using SUR_CSTG.ViewModels.AreaViewModels;
 using SUR_CSTG.Views.BreakdownViews;
 using SUR_CSTG.ViewModels.BreakdownViewModels;
+using SUR_CSTG.ViewModels.PersonViewModels;
 
 namespace SUR_CSTG.ViewModels
 {
@@ -153,6 +154,8 @@ namespace SUR_CSTG.ViewModels
         private void OpenPersonView(object obj)
         {
             var view = new PersonView();
+            PersonViewModel vm = new PersonViewModel(this);
+            view.DataContext = vm;
             SelectedView = view;
         }
 

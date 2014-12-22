@@ -8,6 +8,9 @@ using System.Windows.Input;
 using SUR_CSTG.Data;
 using SUR_CSTG.Views.BreakdownViews;
 using SUR_CSTG.Views.PersonViews;
+using SUR_CSTG.ViewModels.PersonViewModels;
+using SUR_CSTG.ViewModels.BreakdownViewModels;
+using System.Collections.ObjectModel;
 
 namespace SUR_CSTG.ViewModels
 {
@@ -18,6 +21,8 @@ namespace SUR_CSTG.ViewModels
         MainWindowViewModel _mainWindowViewModel;
         Person _person;
         string _nameSurname;
+        string _surname;
+        string _name;
         Position _position;
         UserControl _selectedView;
         ICommand _showAddBreakdown;
@@ -25,15 +30,26 @@ namespace SUR_CSTG.ViewModels
         ICommand _logout;
         ICommand _closeWinndow;
 
+       
+
 
         #endregion
 
         #region Constructors
 
+        public void OpenViev()
+        {
+            var view = new AddBreakdownView();
+            AddBreakdownViewModel vm = new AddBreakdownViewModel(this);
+            vm.PersonToAdd = _mainWindowViewModel.PersonToLogin;
+            view.DataContext = vm;
+            SelectedView = view;
+        }
+
         public WorkerGeneralWindowViewModel(MainWindowViewModel mainWindowViewModel)
         {
             _mainWindowViewModel = mainWindowViewModel;
-
+            OpenViev();
         }
 
         #endregion
@@ -47,6 +63,8 @@ namespace SUR_CSTG.ViewModels
             {
                 _person = value;
                 Position = value.Position;
+                Name = value.Name;
+                Surname = value.Surname;
                 NameSurname = value.Name + " " + value.Surname;
                 OnPropertyChanged("");
             }
@@ -68,6 +86,26 @@ namespace SUR_CSTG.ViewModels
             set
             {
                 _nameSurname = value;
+                OnPropertyChanged("");
+            }
+        }
+
+        public string Name
+        {
+            get { return _name; }
+            set
+            {
+                _name = value;
+                OnPropertyChanged("");
+            }
+        }
+
+        public string Surname
+        {
+            get { return _surname; }
+            set
+            {
+                _surname = value;
                 OnPropertyChanged("");
             }
         }
@@ -121,8 +159,7 @@ namespace SUR_CSTG.ViewModels
 
         private void OpenAddBreakdownView(object obj)
         {
-            var view = new AddBreakdownView();
-            SelectedView = view;
+            OpenViev();
         }
 
         public ICommand OpenChangePasswordViewCommand
@@ -133,6 +170,8 @@ namespace SUR_CSTG.ViewModels
         private void OpenChangePasswordView(object obj)
         {
             var view = new ChangePasswordView();
+            ChangePasswordViewModel vm = new ChangePasswordViewModel(this);
+            view.DataContext = vm;
             SelectedView = view;
         }
 
